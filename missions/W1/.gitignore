@@ -1,1 +1,4 @@
 *.csv
+*.db
+*.db-journal
+*.db.bak-before-orderdetails
