@@ -174,14 +174,48 @@ class RegionalGDPTransformer:
 
         return transformed.sort_values(self.GDP_COLUMN, ascending=False).reset_index(drop=True)
 
-    # 국가명에 해당하는 컬럼을 이름 기준으로 찾고, 없으면 첫 컬럼을 사용합니다.
+    # 국가명에 해당하는 컬럼을 이름과 실제 값의 형태를 함께 보고 찾습니다.
     def _find_country_column(self, df):
-        for column in df.columns:
-            column_name = str(column).casefold()
-            if "country" in column_name or "territory" in column_name or "region" in column_name:
-                return column
+        columns_by_score = [
+            (self._country_column_score(df[column], column), column) for column in df.columns
+        ]
+        best_score, best_column = max(columns_by_score, key=lambda item: item[0])
+
+        if best_score > 0:
+            return best_column
 
         return df.columns[0]
+
+    # 컬럼명과 실제 값의 형태를 함께 보고 국가명 컬럼에 가까운 정도를 계산합니다.
+    def _country_column_score(self, series, column_name):
+        column_name = str(column_name).casefold()
+        values = series.map(self._clean_text)
+        values = values[values != ""]
+
+        if values.empty:
+            return -100
+
+        text_count = values.map(self._looks_like_country_name).sum()
+        rank_count = values.map(self._looks_like_rank_value).sum()
+        score = (text_count * 2) - (rank_count * 3)
+
+        if any(keyword in column_name for keyword in ("country", "territory", "region")):
+            score += 5
+
+        if any(keyword in column_name for keyword in ("rank", "gdp", "year")):
+            score -= 10
+
+        return score
+
+    # 순위나 결측 표시가 아니라 실제 국가명처럼 문자가 들어 있는 값인지 판단합니다.
+    def _looks_like_country_name(self, value):
+        text = self._clean_text(value)
+        return bool(text and not self._looks_like_rank_value(text) and re.search(r"[A-Za-z]", text))
+
+    # Rank 컬럼에서 흔히 나오는 숫자와 대시 형태의 값인지 판단합니다.
+    def _looks_like_rank_value(self, value):
+        text = self._clean_text(value)
+        return text in {"-", "--", "—"} or re.fullmatch(r"\d+(?:\.\d+)?", text) is not None
 
     # GDP 후보 컬럼을 단서별로 평가해 실제 GDP 값이 들어 있는 컬럼을 선택합니다.
     def _find_gdp_column(self, df, country_column):

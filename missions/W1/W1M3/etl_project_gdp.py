@@ -30,7 +30,7 @@ class ETLLogger:
 # 추출된 원본 표를 JSON으로 저장 이건 “raw data snapshot” 저장에 가깝고, ETL의 최종 Load 단계가 아닙니다.
 class ExtractJSONWriter:
     # JSON 출력 경로와 저장할 데이터 컨테이너를 초기화합니다.
-    def __init__(self, output_path=BASE_DIR / "Countries_by_GDP.json"):
+    def __init__(self, output_path=BASE_DIR / "Raw_Countries_by_GDP.json"):
         self.output_path = Path(output_path)
         self.data = {}
 
@@ -178,12 +178,46 @@ class RegionalGDPTransformer:
 
     # 국가명, 영토명, 지역명을 담고 있는 컬럼을 찾아 반환합니다.
     def _find_country_column(self, df):
-        for column in df.columns:
-            column_name = str(column).casefold()
-            if "country" in column_name or "territory" in column_name or "region" in column_name:
-                return column
+        columns_by_score = [
+            (self._country_column_score(df[column], column), column) for column in df.columns
+        ]
+        best_score, best_column = max(columns_by_score, key=lambda item: item[0])
+
+        if best_score > 0:
+            return best_column
 
         return df.columns[0]
+
+    # 컬럼명과 실제 값의 형태를 함께 보고 국가명 컬럼에 가까운 정도를 계산합니다.
+    def _country_column_score(self, series, column_name):
+        column_name = str(column_name).casefold()
+        values = series.map(self._clean_text)
+        values = values[values != ""]
+
+        if values.empty:
+            return -100
+
+        text_count = values.map(self._looks_like_country_name).sum()
+        rank_count = values.map(self._looks_like_rank_value).sum()
+        score = (text_count * 2) - (rank_count * 3)
+
+        if any(keyword in column_name for keyword in ("country", "territory", "region")):
+            score += 5
+
+        if any(keyword in column_name for keyword in ("rank", "gdp", "year")):
+            score -= 10
+
+        return score
+
+    # 순위나 결측 표시가 아니라 실제 국가명처럼 문자가 들어 있는 값인지 판단합니다.
+    def _looks_like_country_name(self, value):
+        text = self._clean_text(value)
+        return bool(text and not self._looks_like_rank_value(text) and re.search(r"[A-Za-z]", text))
+
+    # Rank 컬럼에서 흔히 나오는 숫자와 대시 형태의 값인지 판단합니다.
+    def _looks_like_rank_value(self, value):
+        text = self._clean_text(value)
+        return text in {"-", "--", "—"} or re.fullmatch(r"\d+(?:\.\d+)?", text) is not None
 
     # GDP 후보 컬럼 중 실제 GDP 금액으로 가장 적절한 컬럼을 선택합니다.
     def _find_gdp_column(self, df, country_column):
@@ -319,35 +353,27 @@ class RegionalGDPTransformer:
         return " ".join(text.split())
 
 
-# 변환된 지역별 GDP 데이터를 모아 최종 분석 결과를 출력하는 클래스입니다.
-# 변환된 데이터를 내부에 저장하고 출력을 담당합니다. 실제 ETL과정처럼 데이터 웨어하우스에 저장하는 기능은 없습니다.
-class RegionalGDPLoader:
+# 변환된 지역별 GDP 데이터를 합치고 최종 분석 결과를 만드는 클래스입니다.
+class RegionalGDPAnalyzer:
     GDP_COLUMN = RegionalGDPTransformer.GDP_COLUMN
 
-    # 출력 기준값과 지역별 상위 국가 수, 누적 테이블 저장소를 초기화합니다.
+    # GDP 기준값과 지역별 상위 국가 수를 설정합니다.
     def __init__(self, minimum_gdp_billion=100, top_n=5):
         self.minimum_gdp_billion = minimum_gdp_billion
         self.top_n = top_n
-        self.tables = []
 
-    # 변환된 지역별 GDP 데이터프레임을 내부 목록에 저장합니다.
-    def load(self, transformed_data):
-        self.tables.append(transformed_data.copy())
+    # 지역별 변환 데이터를 하나로 합친 뒤 최종 분석 결과들을 반환합니다.
+    def analyze(self, transformed_tables):
+        transformed_data = self._merge_tables(transformed_tables)
 
-    # GDP 기준 필터 결과와 지역별 상위 평균 GDP 결과를 콘솔에 출력합니다.
-    def print_result(self):
-        countries_over_100b = self.get_countries_over_100b()
-        top5_average = self.get_top5_average_by_region()
-
-        print(f"\n{'=' * 20} GDP >= 100B USD {'=' * 20}")
-        print(self._to_string(countries_over_100b))
-
-        print(f"\n{'=' * 20} Region Top 5 Average {'=' * 20}")
-        print(self._to_string(top5_average))
+        return {
+            "countries_over_100b": self.get_countries_over_100b(transformed_data),
+            "top5_average_by_region": self.get_top5_average_by_region(transformed_data),
+        }
 
     # 전체 데이터에서 GDP가 기준값 이상인 국가만 추려 내림차순으로 반환합니다.
-    def get_countries_over_100b(self):
-        df = self._merged_table()
+    def get_countries_over_100b(self, transformed_data):
+        df = transformed_data.copy()
 
         return (
             df[df[self.GDP_COLUMN] >= self.minimum_gdp_billion]
@@ -356,8 +382,8 @@ class RegionalGDPLoader:
         )
 
     # 지역별 GDP 상위 N개 국가의 평균 GDP를 계산합니다.
-    def get_top5_average_by_region(self):
-        df = self._merged_table()
+    def get_top5_average_by_region(self, transformed_data):
+        df = transformed_data.copy()
         top5 = (
             df.sort_values(["Region", self.GDP_COLUMN], ascending=[True, False])
             .groupby("Region")
@@ -371,12 +397,45 @@ class RegionalGDPLoader:
             .round(2)
         )
 
-    # 지금까지 적재된 지역별 데이터프레임들을 하나의 데이터프레임으로 합칩니다.
-    def _merged_table(self):
-        if not self.tables:
+    # 지역별 DataFrame 목록을 전체 분석용 DataFrame 하나로 합칩니다.
+    def _merge_tables(self, transformed_tables):
+        if not transformed_tables:
             return pd.DataFrame(columns=["Region", "Country", self.GDP_COLUMN])
 
-        return pd.concat(self.tables, ignore_index=True)
+        return pd.concat(transformed_tables, ignore_index=True)
+
+
+# 분석 결과를 JSON 파일로 저장하는 클래스입니다.
+class RegionalGDPLoader:
+    # JSON 출력 경로를 설정합니다.
+    def __init__(self, output_path=BASE_DIR / "Countries_by_GDP.json"):
+        self.output_path = Path(output_path)
+
+    # 분석 결과를 JSON 직렬화 가능한 형태로 변환해 파일에 저장합니다.
+    def load(self, analysis_result):
+        json_data = {
+            key: self._to_records(value) for key, value in analysis_result.items()
+        }
+
+        with self.output_path.open("w", encoding="utf-8") as json_file:
+            json.dump(json_data, json_file, ensure_ascii=False, indent=2, default=str)
+
+    # DataFrame을 JSON 직렬화 가능한 레코드 목록으로 변환합니다.
+    def _to_records(self, df):
+        df = df.copy()
+        df = df.where(pd.notna(df), None)
+        return df.to_dict(orient="records")
+
+
+# 분석 결과를 콘솔에 출력하는 클래스입니다.
+class ConsoleReporter:
+    # GDP 기준 필터 결과와 지역별 상위 평균 GDP 결과를 콘솔에 출력합니다.
+    def print_result(self, countries_over_100b, top5_average):
+        print(f"\n{'=' * 20} GDP >= 100B USD {'=' * 20}")
+        print(self._to_string(countries_over_100b))
+
+        print(f"\n{'=' * 20} Region Top 5 Average {'=' * 20}")
+        print(self._to_string(top5_average))
 
     # 데이터프레임을 소수점 두 자리 형식의 문자열 표로 변환합니다.
     def _to_string(self, df):
@@ -389,28 +448,37 @@ class RegionalGDPLoader:
 
 if __name__ == "__main__":
     logger = ETLLogger()
-    json_writer = ExtractJSONWriter()
     crawler = RegionalGDPTableCrawler()
     transformer = RegionalGDPTransformer()
+    analyzer = RegionalGDPAnalyzer()
     loader = RegionalGDPLoader()
+    reporter = ConsoleReporter()
+    transformed_tables = []
 
     logger.log("ETL process started")
 
     for region in crawler.region_urls:
         logger.log(f"Extract started for {region}")
         region_data = crawler.extract(region)
-        json_writer.save(region, region_data)
         logger.log(f"Extract ended for {region}")
 
         logger.log(f"Transform started for {region}")
         transformed_data = transformer.transform(region, region_data)
         logger.log(f"Transform ended for {region}")
 
-        logger.log(f"Load started for {region}")
-        loader.load(transformed_data)
-        logger.log(f"Load ended for {region}")
+        transformed_tables.append(transformed_data)
+
+    logger.log("Transform analysis started")
+    analysis_result = analyzer.analyze(transformed_tables)
+    logger.log("Transform analysis ended")
+
+    logger.log("Load started")
+    loader.load(analysis_result)
+    logger.log("Load ended")
 
     logger.log("Output started")
-    loader.print_result()
+    countries_over_100b = analysis_result["countries_over_100b"]
+    top5_average = analysis_result["top5_average_by_region"]
+    reporter.print_result(countries_over_100b, top5_average)
     logger.log("Output ended")
     logger.log("ETL process ended")

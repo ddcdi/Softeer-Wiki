@@ -1,2600 +1,498 @@
 {
-  "Africa": [
+  "countries_over_100b": [
     {
-      "Rank": "1",
-      "Country": "South Africa",
-      "Nominal GDP (million US$)": "479964",
-      "Population": "63970000",
-      "Per capita (US$)": "7503"
-    },
-    {
-      "Rank": "2",
-      "Country": "Egypt",
-      "Nominal GDP (million US$)": "429645",
-      "Population": "110058000",
-      "Per capita (US$)": "3904"
-    },
-    {
-      "Rank": "3",
-      "Country": "Nigeria",
-      "Nominal GDP (million US$)": "377365",
-      "Population": "242578000",
-      "Per capita (US$)": "1556"
-    },
-    {
-      "Rank": "4",
-      "Country": "Algeria",
-      "Nominal GDP (million US$)": "317173",
-      "Population": "47851000",
-      "Per capita (US$)": "6628"
-    },
-    {
-      "Rank": "5",
-      "Country": "Morocco",
-      "Nominal GDP (million US$)": "194333",
-      "Population": "38050000",
-      "Per capita (US$)": "5107"
-    },
-    {
-      "Rank": "6",
-      "Country": "Angola",
-      "Nominal GDP (million US$)": "152354",
-      "Population": "40584000",
-      "Per capita (US$)": "3754"
-    },
-    {
-      "Rank": "7",
-      "Country": "Kenya",
-      "Nominal GDP (million US$)": "147265",
-      "Population": "54269000",
-      "Per capita (US$)": "2714"
-    },
-    {
-      "Rank": "8",
-      "Country": "Democratic Republic of the Congo",
-      "Nominal GDP (million US$)": "123406",
-      "Population": "110020000",
-      "Per capita (US$)": "1122"
-    },
-    {
-      "Rank": "9",
-      "Country": "Ethiopia",
-      "Nominal GDP (million US$)": "121527",
-      "Population": "112370000",
-      "Per capita (US$)": "1081"
-    },
-    {
-      "Rank": "10",
-      "Country": "Ghana",
-      "Nominal GDP (million US$)": "118293",
-      "Population": "35698000",
-      "Per capita (US$)": "3314"
-    },
-    {
-      "Rank": "11",
-      "Country": "Côte d'Ivoire",
-      "Nominal GDP (million US$)": "112115",
-      "Population": "33838000",
-      "Per capita (US$)": "3313"
-    },
-    {
-      "Rank": "12",
-      "Country": "Tanzania",
-      "Nominal GDP (million US$)": "94889",
-      "Population": "69653000",
-      "Per capita (US$)": "1362"
-    },
-    {
-      "Rank": "13",
-      "Country": "Uganda",
-      "Nominal GDP (million US$)": "73370",
-      "Population": "49706000",
-      "Per capita (US$)": "1476"
-    },
-    {
-      "Rank": "14",
-      "Country": "Cameroon",
-      "Nominal GDP (million US$)": "65135",
-      "Population": "30646000",
-      "Per capita (US$)": "2125"
-    },
-    {
-      "Rank": "15",
-      "Country": "Tunisia",
-      "Nominal GDP (million US$)": "60745",
-      "Population": "12415000",
-      "Per capita (US$)": "4893"
-    },
-    {
-      "Rank": "16",
-      "Country": "Zimbabwe",
-      "Nominal GDP (million US$)": "56713",
-      "Population": "17728000",
-      "Per capita (US$)": "3199"
-    },
-    {
-      "Rank": "17",
-      "Country": "Libya",
-      "Nominal GDP (million US$)": "52453",
-      "Population": "7534000",
-      "Per capita (US$)": "6962"
-    },
-    {
-      "Rank": "18",
-      "Country": "Sudan",
-      "Nominal GDP (million US$)": "44688",
-      "Population": "51729000",
-      "Per capita (US$)": "864"
-    },
-    {
-      "Rank": "19",
-      "Country": "Zambia",
-      "Nominal GDP (million US$)": "41243",
-      "Population": "22522000",
-      "Per capita (US$)": "1831"
-    },
-    {
-      "Rank": "20",
-      "Country": "Senegal",
-      "Nominal GDP (million US$)": "40469",
-      "Population": "19700000",
-      "Per capita (US$)": "2054"
-    },
-    {
-      "Rank": "21",
-      "Country": "Mali",
-      "Nominal GDP (million US$)": "33847",
-      "Population": "26020000",
-      "Per capita (US$)": "1301"
-    },
-    {
-      "Rank": "22",
-      "Country": "Burkina Faso",
-      "Nominal GDP (million US$)": "32513",
-      "Population": "24648000",
-      "Per capita (US$)": "1319"
-    },
-    {
-      "Rank": "23",
-      "Country": "Guinea",
-      "Nominal GDP (million US$)": "29930",
-      "Population": "16198000",
-      "Per capita (US$)": "1848"
-    },
-    {
-      "Rank": "24",
-      "Country": "Benin",
-      "Nominal GDP (million US$)": "27786",
-      "Population": "15357000",
-      "Per capita (US$)": "1809"
-    },
-    {
-      "Rank": "25",
-      "Country": "Chad",
-      "Nominal GDP (million US$)": "25628",
-      "Population": "19491000",
-      "Per capita (US$)": "1315"
-    },
-    {
-      "Rank": "26",
-      "Country": "Niger",
-      "Nominal GDP (million US$)": "24813",
-      "Population": "30204000",
-      "Per capita (US$)": "822"
-    },
-    {
-      "Rank": "27",
-      "Country": "Gabon",
-      "Nominal GDP (million US$)": "23363",
-      "Population": "2356000",
-      "Per capita (US$)": "9918"
-    },
-    {
-      "Rank": "28",
-      "Country": "Mozambique",
-      "Nominal GDP (million US$)": "23275",
-      "Population": "36826000",
-      "Per capita (US$)": "632"
-    },
-    {
-      "Rank": "29",
-      "Country": "Botswana",
-      "Nominal GDP (million US$)": "21937",
-      "Population": "2584000",
-      "Per capita (US$)": "8490"
-    },
-    {
-      "Rank": "30",
-      "Country": "Madagascar",
-      "Nominal GDP (million US$)": "21185",
-      "Population": "32319000",
-      "Per capita (US$)": "656"
-    },
-    {
-      "Rank": "31",
-      "Country": "Malawi",
-      "Nominal GDP (million US$)": "18152",
-      "Population": "24750000",
-      "Per capita (US$)": "733"
-    },
-    {
-      "Rank": "32",
-      "Country": "Rwanda",
-      "Nominal GDP (million US$)": "17336",
-      "Population": "14471000",
-      "Per capita (US$)": "1198"
-    },
-    {
-      "Rank": "33",
-      "Country": "Namibia",
-      "Nominal GDP (million US$)": "17314",
-      "Population": "3107000",
-      "Per capita (US$)": "5573"
-    },
-    {
-      "Rank": "34",
-      "Country": "Mauritius",
-      "Nominal GDP (million US$)": "17119",
-      "Population": "1239000",
-      "Per capita (US$)": "13812"
-    },
-    {
-      "Rank": "35",
-      "Country": "Republic of Congo",
-      "Nominal GDP (million US$)": "17028",
-      "Population": "6668000",
-      "Per capita (US$)": "2554"
-    },
-    {
-      "Rank": "36",
-      "Country": "Mauritania",
-      "Nominal GDP (million US$)": "14352",
-      "Population": "4732000",
-      "Per capita (US$)": "3033"
-    },
-    {
-      "Rank": "37",
-      "Country": "Somalia",
-      "Nominal GDP (million US$)": "14174",
-      "Population": "17438000",
-      "Per capita (US$)": "813"
-    },
-    {
-      "Rank": "38",
-      "Country": "Equatorial Guinea",
-      "Nominal GDP (million US$)": "13722",
-      "Population": "1683000",
-      "Per capita (US$)": "8152"
-    },
-    {
-      "Rank": "39",
-      "Country": "Togo",
-      "Nominal GDP (million US$)": "13437",
-      "Population": "10020000",
-      "Per capita (US$)": "1341"
-    },
-    {
-      "Rank": "40",
-      "Country": "Sierra Leone",
-      "Nominal GDP (million US$)": "8270",
-      "Population": "9002000",
-      "Per capita (US$)": "919"
-    },
-    {
-      "Rank": "41",
-      "Country": "Burundi",
-      "Nominal GDP (million US$)": "8137",
-      "Population": "14903000",
-      "Per capita (US$)": "546"
-    },
-    {
-      "Rank": "42",
-      "Country": "South Sudan",
-      "Nominal GDP (million US$)": "6069",
-      "Population": "12436000",
-      "Per capita (US$)": "488"
-    },
-    {
-      "Rank": "43",
-      "Country": "Eswatini",
-      "Nominal GDP (million US$)": "5792",
-      "Population": "1176000",
-      "Per capita (US$)": "4927"
-    },
-    {
-      "Rank": "44",
-      "Country": "Liberia",
-      "Nominal GDP (million US$)": "5642",
-      "Population": "5854000",
-      "Per capita (US$)": "964"
-    },
-    {
-      "Rank": "45",
-      "Country": "Djibouti",
-      "Nominal GDP (million US$)": "4725",
-      "Population": "1069000",
-      "Per capita (US$)": "4421"
-    },
-    {
-      "Rank": "46",
-      "Country": "Central African Republic",
-      "Nominal GDP (million US$)": "3492",
-      "Population": "5699000",
-      "Per capita (US$)": "613"
-    },
-    {
-      "Rank": "47",
-      "Country": "Cabo Verde",
-      "Nominal GDP (million US$)": "3448",
-      "Population": "517000",
-      "Per capita (US$)": "6670"
-    },
-    {
-      "Rank": "48",
-      "Country": "Guinea-Bissau",
-      "Nominal GDP (million US$)": "2985",
-      "Population": "2060000",
-      "Per capita (US$)": "1449"
-    },
-    {
-      "Rank": "49",
-      "Country": "Lesotho",
-      "Nominal GDP (million US$)": "2972",
-      "Population": "2394000",
-      "Per capita (US$)": "1241"
-    },
-    {
-      "Rank": "50",
-      "Country": "The Gambia",
-      "Nominal GDP (million US$)": "2792",
-      "Population": "2930000",
-      "Per capita (US$)": "953"
-    },
-    {
-      "Rank": "51",
-      "Country": "Seychelles",
-      "Nominal GDP (million US$)": "2251",
-      "Population": "127000",
-      "Per capita (US$)": "17675"
-    },
-    {
-      "Rank": "52",
-      "Country": "Eritrea",
-      "Nominal GDP (million US$)": "1,982 (2019)",
-      "Population": "3,497,000 (2019)",
-      "Per capita (US$)": "567 (2019)"
-    },
-    {
-      "Rank": "53",
-      "Country": "Comoros",
-      "Nominal GDP (million US$)": "1814",
-      "Population": "930000",
-      "Per capita (US$)": "1951"
-    },
-    {
-      "Rank": "54",
-      "Country": "São Tomé and Príncipe",
-      "Nominal GDP (million US$)": "1161",
-      "Population": "245000",
-      "Per capita (US$)": "4739"
-    },
-    {
-      "Rank": "--",
-      "Country": "Total",
-      "Nominal GDP (million US$)": "3119416",
-      "Population": "1523869000",
-      "Per capita (US$)": "2047"
-    }
-  ],
-  "Arab League": [
-    {
-      "Roms.": "—",
-      "Country/Territory": "World",
-      "Total GDP (US$)": "126295.331",
-      "GDP per capita (US$)": 14217
-    },
-    {
-      "Roms.": "—",
-      "Country/Territory": "Arab World",
-      "Total GDP (US$)": "4,148.370[n 1]",
-      "GDP per capita (US$)": 8911
-    },
-    {
-      "Roms.": "1",
-      "Country/Territory": "Saudi Arabia",
-      "Total GDP (US$)": "1.32 trillion",
-      "GDP per capita (US$)": 37536
-    },
-    {
-      "Roms.": "2",
-      "Country/Territory": "United Arab Emirates",
-      "Total GDP (US$)": "601.16 billion",
-      "GDP per capita (US$)": 51935
-    },
-    {
-      "Roms.": "3",
-      "Country/Territory": "Egypt",
-      "Total GDP (US$)": "429.645 billion",
-      "GDP per capita (US$)": 3904
-    },
-    {
-      "Roms.": "4",
-      "Country/Territory": "Algeria",
-      "Total GDP (US$)": "317.173 billion",
-      "GDP per capita (US$)": 6628
-    },
-    {
-      "Roms.": "5",
-      "Country/Territory": "Iraq",
-      "Total GDP (US$)": "273.91 billion",
-      "GDP per capita (US$)": 5706
-    },
-    {
-      "Roms.": "6",
-      "Country/Territory": "Qatar",
-      "Total GDP (US$)": "239.14 billion",
-      "GDP per capita (US$)": 75269
-    },
-    {
-      "Roms.": "7",
-      "Country/Territory": "Morocco",
-      "Total GDP (US$)": "194.333 billion",
-      "GDP per capita (US$)": 5107
-    },
-    {
-      "Roms.": "8",
-      "Country/Territory": "Kuwait",
-      "Total GDP (US$)": "162.90 billion",
-      "GDP per capita (US$)": 33164
-    },
-    {
-      "Roms.": "9",
-      "Country/Territory": "Oman",
-      "Total GDP (US$)": "108.91 billion",
-      "GDP per capita (US$)": 20304
-    },
-    {
-      "Roms.": "10",
-      "Country/Territory": "Jordan",
-      "Total GDP (US$)": "59.29 billion",
-      "GDP per capita (US$)": 5156
-    },
-    {
-      "Roms.": "11",
-      "Country/Territory": "Tunisia",
-      "Total GDP (US$)": "60.745 billion",
-      "GDP per capita (US$)": 4893
-    },
-    {
-      "Roms.": "12",
-      "Country/Territory": "Syria",
-      "Total GDP (US$)": "17.25 billion",
-      "GDP per capita (US$)": 847
-    },
-    {
-      "Roms.": "13",
-      "Country/Territory": "Libya",
-      "Total GDP (US$)": "52.453 billion",
-      "GDP per capita (US$)": 6962
-    },
-    {
-      "Roms.": "14",
-      "Country/Territory": "Bahrain",
-      "Total GDP (US$)": "49.19 billion",
-      "GDP per capita (US$)": 32793
-    },
-    {
-      "Roms.": "15",
-      "Country/Territory": "Sudan",
-      "Total GDP (US$)": "44.688 billion",
-      "GDP per capita (US$)": 864
-    },
-    {
-      "Roms.": "16",
-      "Country/Territory": "Lebanon",
-      "Total GDP (US$)": "28.28 billion",
-      "GDP per capita (US$)": 5050
-    },
-    {
-      "Roms.": "17",
-      "Country/Territory": "Yemen",
-      "Total GDP (US$)": "17.24 billion",
-      "GDP per capita (US$)": 431
-    },
-    {
-      "Roms.": "18",
-      "Country/Territory": "Mauritania",
-      "Total GDP (US$)": "14.352 billion",
-      "GDP per capita (US$)": 3033
-    },
-    {
-      "Roms.": "19",
-      "Country/Territory": "Somalia",
-      "Total GDP (US$)": "14.174 billion",
-      "GDP per capita (US$)": 813
-    },
-    {
-      "Roms.": "20",
-      "Country/Territory": "Palestine",
-      "Total GDP (US$)": "13.71 billion",
-      "GDP per capita (US$)": 2493
-    },
-    {
-      "Roms.": "21",
-      "Country/Territory": "Djibouti",
-      "Total GDP (US$)": "4.725 billion",
-      "GDP per capita (US$)": 4421
-    },
-    {
-      "Roms.": "22",
-      "Country/Territory": "Comoros",
-      "Total GDP (US$)": "1.814 billion",
-      "GDP per capita (US$)": 1951
-    }
-  ],
-  "Asia-Pacific": [
-    {
-      "Rank": 1,
-      "Country": "China",
-      "GDP (millions of USD)": 17700899
-    },
-    {
-      "Rank": 2,
-      "Country": "Japan",
-      "GDP (millions of USD)": 4230862
-    },
-    {
-      "Rank": 3,
-      "Country": "India",
-      "GDP (millions of USD)": 3732224
-    },
-    {
-      "Rank": 4,
-      "Country": "South Korea",
-      "GDP (millions of USD)": 1709232
-    },
-    {
-      "Rank": 5,
-      "Country": "Australia",
-      "GDP (millions of USD)": 1687713
-    },
-    {
-      "Rank": 6,
-      "Country": "Indonesia",
-      "GDP (millions of USD)": 1417387
-    },
-    {
-      "Rank": 7,
-      "Country": "Taiwan",
-      "GDP (millions of USD)": 751930
-    },
-    {
-      "Rank": 8,
-      "Country": "Thailand",
-      "GDP (millions of USD)": 512193
-    },
-    {
-      "Rank": 9,
-      "Country": "Singapore",
-      "GDP (millions of USD)": 497347
-    },
-    {
-      "Rank": 10,
-      "Country": "Bangladesh",
-      "GDP (millions of USD)": 446349
-    },
-    {
-      "Rank": 11,
-      "Country": "Philippines",
-      "GDP (millions of USD)": 435675
-    },
-    {
-      "Rank": 12,
-      "Country": "Vietnam",
-      "GDP (millions of USD)": 433356
-    },
-    {
-      "Rank": 13,
-      "Country": "Malaysia",
-      "GDP (millions of USD)": 430895
-    },
-    {
-      "Rank": 14,
-      "Country": "Hong Kong (China)",
-      "GDP (millions of USD)": 385546
-    },
-    {
-      "Rank": 15,
-      "Country": "Pakistan",
-      "GDP (millions of USD)": 338237
-    },
-    {
-      "Rank": 16,
-      "Country": "New Zealand",
-      "GDP (millions of USD)": 249415
-    },
-    {
-      "Rank": 17,
-      "Country": "Sri Lanka",
-      "GDP (millions of USD)": 75296
-    },
-    {
-      "Rank": 18,
-      "Country": "Myanmar",
-      "GDP (millions of USD)": 74861
-    },
-    {
-      "Rank": 19,
-      "Country": "Nepal",
-      "GDP (millions of USD)": 41339
-    },
-    {
-      "Rank": 20,
-      "Country": "Macau (China)",
-      "GDP (millions of USD)": 38840
-    },
-    {
-      "Rank": 21,
-      "Country": "Papua New Guinea",
-      "GDP (millions of USD)": 31692
-    },
-    {
-      "Rank": 22,
-      "Country": "Cambodia",
-      "GDP (millions of USD)": 30943
-    },
-    {
-      "Rank": 23,
-      "Country": "Mongolia",
-      "GDP (millions of USD)": 18782
-    },
-    {
-      "Rank": 24,
-      "Country": "Brunei",
-      "GDP (millions of USD)": 15153
-    },
-    {
-      "Rank": 25,
-      "Country": "Laos",
-      "GDP (millions of USD)": 14244
-    },
-    {
-      "Rank": 26,
-      "Country": "Maldives",
-      "GDP (millions of USD)": 6977
-    },
-    {
-      "Rank": 27,
-      "Country": "Fiji",
-      "GDP (millions of USD)": 5511
-    },
-    {
-      "Rank": 28,
-      "Country": "Bhutan",
-      "GDP (millions of USD)": 2686
-    },
-    {
-      "Rank": 29,
-      "Country": "Timor-Leste",
-      "GDP (millions of USD)": 2023
-    },
-    {
-      "Rank": 30,
-      "Country": "Solomon Islands",
-      "GDP (millions of USD)": 1690
-    },
-    {
-      "Rank": 31,
-      "Country": "Vanuatu",
-      "GDP (millions of USD)": 1166
-    },
-    {
-      "Rank": 32,
-      "Country": "Samoa",
-      "GDP (millions of USD)": 939
-    },
-    {
-      "Rank": 33,
-      "Country": "Tonga",
-      "GDP (millions of USD)": 547
-    },
-    {
-      "Rank": 34,
-      "Country": "Micronesia",
-      "GDP (millions of USD)": 458
-    },
-    {
-      "Rank": 35,
-      "Country": "Marshall Islands",
-      "GDP (millions of USD)": 277
-    },
-    {
-      "Rank": 36,
-      "Country": "Palau",
-      "GDP (millions of USD)": 267
-    },
-    {
-      "Rank": 37,
-      "Country": "Kiribati",
-      "GDP (millions of USD)": 246
-    },
-    {
-      "Rank": 38,
-      "Country": "Nauru",
-      "GDP (millions of USD)": 150
-    },
-    {
-      "Rank": 39,
-      "Country": "Tuvalu",
-      "GDP (millions of USD)": 63
-    }
-  ],
-  "Commonwealth": [
-    {
-      "Rank": NaN,
-      "Country/Region": "World",
-      "GDP (millions of US$)": "79,865,481[4]",
-      "GDP per capita (US$)": "10,728[5]"
-    },
-    {
-      "Rank": NaN,
-      "Country/Region": "Commonwealth of Nations",
-      "GDP (millions of US$)": "10923071",
-      "GDP per capita (US$)": "3532"
-    },
-    {
-      "Rank": "1",
-      "Country/Region": "India",
-      "GDP (millions of US$)": "3889130",
-      "GDP per capita (US$)": "2698"
-    },
-    {
-      "Rank": "2",
-      "Country/Region": "United Kingdom",
-      "GDP (millions of US$)": "3587545",
-      "GDP per capita (US$)": "52423"
-    },
-    {
-      "Rank": "3",
-      "Country/Region": "Canada",
-      "GDP (millions of US$)": "2214796",
-      "GDP per capita (US$)": "53834"
-    },
-    {
-      "Rank": "4",
-      "Country/Region": "Australia",
-      "GDP (millions of US$)": "1802006",
-      "GDP per capita (US$)": "65966"
-    },
-    {
-      "Rank": "5",
-      "Country/Region": "Singapore",
-      "GDP (millions of US$)": "530708",
-      "GDP per capita (US$)": "89370"
-    },
-    {
-      "Rank": "6",
-      "Country/Region": "Bangladesh",
-      "GDP (millions of US$)": "451468",
-      "GDP per capita (US$)": "2625"
-    },
-    {
-      "Rank": "7",
-      "Country/Region": "Malaysia",
-      "GDP (millions of US$)": "439748",
-      "GDP per capita (US$)": "13142"
-    },
-    {
-      "Rank": "8",
-      "Country/Region": "South Africa",
-      "GDP (millions of US$)": "403045",
-      "GDP per capita (US$)": "6377"
-    },
-    {
-      "Rank": "9",
-      "Country/Region": "Pakistan",
-      "GDP (millions of US$)": "374595",
-      "GDP per capita (US$)": "1588"
-    },
-    {
-      "Rank": "10",
-      "Country/Region": "New Zealand",
-      "GDP (millions of US$)": "252236",
-      "GDP per capita (US$)": "47072"
-    },
-    {
-      "Rank": "11",
-      "Country/Region": "Nigeria",
-      "GDP (millions of US$)": "199721",
-      "GDP per capita (US$)": "877"
-    },
-    {
-      "Rank": "12",
-      "Country/Region": "Sri Lanka",
-      "GDP (millions of US$)": "87591",
-      "GDP per capita (US$)": "4085"
-    },
-    {
-      "Rank": "13",
-      "Country/Region": "Kenya",
-      "GDP (millions of US$)": "79511",
-      "GDP per capita (US$)": "1702"
-    },
-    {
-      "Rank": "14",
-      "Country/Region": "Tanzania",
-      "GDP (millions of US$)": "51725",
-      "GDP per capita (US$)": "1034"
-    },
-    {
-      "Rank": "15",
-      "Country/Region": "Ghana",
-      "GDP (millions of US$)": "47032",
-      "GDP per capita (US$)": "1663"
-    },
-    {
-      "Rank": "16",
-      "Country/Region": "Gabon",
-      "GDP (millions of US$)": "36730",
-      "GDP per capita (US$)": "7230"
-    },
-    {
-      "Rank": "17",
-      "Country/Region": "Cameroon",
-      "GDP (millions of US$)": "34006",
-      "GDP per capita (US$)": "1401"
-    },
-    {
-      "Rank": "18",
-      "Country/Region": "Uganda",
-      "GDP (millions of US$)": "26349",
-      "GDP per capita (US$)": "699"
-    },
-    {
-      "Rank": "19",
-      "Country/Region": "Zambia",
-      "GDP (millions of US$)": "25504",
-      "GDP per capita (US$)": "1480"
-    },
-    {
-      "Rank": "20",
-      "Country/Region": "Papua New Guinea",
-      "GDP (millions of US$)": "23617",
-      "GDP per capita (US$)": "2861"
-    },
-    {
-      "Rank": "21",
-      "Country/Region": "Cyprus",
-      "GDP (millions of US$)": "21310",
-      "GDP per capita (US$)": "24976"
-    },
-    {
-      "Rank": "22",
-      "Country/Region": "Trinidad and Tobago",
-      "GDP (millions of US$)": "20300",
-      "GDP per capita (US$)": "15769"
-    },
-    {
-      "Rank": "23",
-      "Country/Region": "Botswana",
-      "GDP (millions of US$)": "16725",
-      "GDP per capita (US$)": "7877"
-    },
-    {
-      "Rank": "24",
-      "Country/Region": "Jamaica",
-      "GDP (millions of US$)": "14290",
-      "GDP per capita (US$)": "5048"
-    },
-    {
-      "Rank": "25",
-      "Country/Region": "Togo",
-      "GDP (millions of US$)": "12940",
-      "GDP per capita (US$)": "830v"
-    },
-    {
-      "Rank": "26",
-      "Country/Region": "Namibia",
-      "GDP (millions of US$)": "12558",
-      "GDP per capita (US$)": "5413"
-    },
-    {
-      "Rank": "27",
-      "Country/Region": "Mozambique",
-      "GDP (millions of US$)": "12345",
-      "GDP per capita (US$)": "429"
-    },
-    {
-      "Rank": "28",
-      "Country/Region": "Mauritius",
-      "GDP (millions of US$)": "12273",
-      "GDP per capita (US$)": "9794"
-    },
-    {
-      "Rank": "29",
-      "Country/Region": "Malta",
-      "GDP (millions of US$)": "12011",
-      "GDP per capita (US$)": "27250"
-    },
-    {
-      "Rank": "30",
-      "Country/Region": "Brunei",
-      "GDP (millions of US$)": "11963",
-      "GDP per capita (US$)": "29712"
-    },
-    {
-      "Rank": "31",
-      "Country/Region": "Bahamas",
-      "GDP (millions of US$)": "9127",
-      "GDP per capita (US$)": "31255"
-    },
-    {
-      "Rank": "32",
-      "Country/Region": "Rwanda",
-      "GDP (millions of US$)": "8918",
-      "GDP per capita (US$)": "772"
-    },
-    {
-      "Rank": "33",
-      "Country/Region": "Malawi",
-      "GDP (millions of US$)": "6261",
-      "GDP per capita (US$)": "-324"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "Bermuda[n 1]",
-      "GDP (millions of US$)": "5601",
-      "GDP per capita (US$)": "99363"
-    },
-    {
-      "Rank": "34",
-      "Country/Region": "Fiji",
-      "GDP (millions of US$)": "5054",
-      "GDP per capita (US$)": "5740"
-    },
-    {
-      "Rank": "35",
-      "Country/Region": "Sierra Leone",
-      "GDP (millions of US$)": "3897",
-      "GDP per capita (US$)": "491"
-    },
-    {
-      "Rank": "36",
-      "Country/Region": "Eswatini",
-      "GDP (millions of US$)": "3620",
-      "GDP per capita (US$)": "3915"
-    },
-    {
-      "Rank": "37",
-      "Country/Region": "Guyana",
-      "GDP (millions of US$)": "3591",
-      "GDP per capita (US$)": "4710"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "Cayman Islands[n 2]",
-      "GDP (millions of US$)": "3480",
-      "GDP per capita (US$)": "63261"
-    },
-    {
-      "Rank": "38",
-      "Country/Region": "Lesotho",
-      "GDP (millions of US$)": "2721",
-      "GDP per capita (US$)": "1425"
-    },
-    {
-      "Rank": "39",
-      "Country/Region": "Belize",
-      "GDP (millions of US$)": "1819",
-      "GDP per capita (US$)": "4806"
-    },
-    {
-      "Rank": "40",
-      "Country/Region": "Saint Lucia",
-      "GDP (millions of US$)": "1717",
-      "GDP per capita (US$)": "9607"
-    },
-    {
-      "Rank": "41",
-      "Country/Region": "Antigua and Barbuda",
-      "GDP (millions of US$)": "1535",
-      "GDP per capita (US$)": "16702"
-    },
-    {
-      "Rank": "42",
-      "Country/Region": "Seychelles",
-      "GDP (millions of US$)": "1479",
-      "GDP per capita (US$)": "15686"
-    },
-    {
-      "Rank": "43",
-      "Country/Region": "Solomon Islands",
-      "GDP (millions of US$)": "1273",
-      "GDP per capita (US$)": "2081"
-    },
-    {
-      "Rank": "44",
-      "Country/Region": "Grenada",
-      "GDP (millions of US$)": "1111",
-      "GDP per capita (US$)": "10360"
-    },
-    {
-      "Rank": "45",
-      "Country/Region": "Gambia",
-      "GDP (millions of US$)": "1038",
-      "GDP per capita (US$)": "1015"
-    },
-    {
-      "Rank": "46",
-      "Country/Region": "Saint Kitts and Nevis",
-      "GDP (millions of US$)": "939",
-      "GDP per capita (US$)": "16296"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "British Virgin Islands[n 3]",
-      "GDP (millions of US$)": "902",
-      "GDP per capita (US$)": "31677"
-    },
-    {
-      "Rank": "47",
-      "Country/Region": "Samoa",
-      "GDP (millions of US$)": "844",
-      "GDP per capita (US$)": "4253"
-    },
-    {
-      "Rank": "48",
-      "Country/Region": "Vanuatu",
-      "GDP (millions of US$)": "837",
-      "GDP per capita (US$)": "3094"
-    },
-    {
-      "Rank": "49",
-      "Country/Region": "Saint Vincent and the Grenadines",
-      "GDP (millions of US$)": "815",
-      "GDP per capita (US$)": "7271"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "Turks and Caicos Islands[n 4]",
-      "GDP (millions of US$)": "797",
-      "GDP per capita (US$)": "26291"
-    },
-    {
-      "Rank": "50",
-      "Country/Region": "Dominica",
-      "GDP (millions of US$)": "608",
-      "GDP per capita (US$)": "7921"
-    },
-    {
-      "Rank": "51",
-      "Country/Region": "Tonga",
-      "GDP (millions of US$)": "437",
-      "GDP per capita (US$)": "4177"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "Anguilla[n 5]",
-      "GDP (millions of US$)": "311",
-      "GDP per capita (US$)": "22861"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "Cook Islands[n 6]",
-      "GDP (millions of US$)": "311",
-      "GDP per capita (US$)": "16698"
-    },
-    {
-      "Rank": "52",
-      "Country/Region": "Kiribati",
-      "GDP (millions of US$)": "186",
-      "GDP per capita (US$)": "1721"
-    },
-    {
-      "Rank": "53",
-      "Country/Region": "Nauru",
-      "GDP (millions of US$)": "182[n 7]",
-      "GDP per capita (US$)": "8575"
-    },
-    {
-      "Rank": "—",
-      "Country/Region": "Montserrat[n 8]",
-      "GDP (millions of US$)": "63",
-      "GDP per capita (US$)": "12044"
-    },
-    {
-      "Rank": "54",
-      "Country/Region": "Tuvalu",
-      "GDP (millions of US$)": "40",
-      "GDP per capita (US$)": "3638"
-    },
-    {
-      "Rank": NaN,
-      "Country/Region": NaN,
-      "GDP (millions of US$)": NaN,
-      "GDP per capita (US$)": NaN
-    }
-  ],
-  "Latin America and Caribbean": [
-    {
-      "Rank": 1,
-      "Country": "Brazil",
-      "GDP (nominal) (millions of US$)": 2130391,
-      "GDP (nominal) per capita (US$)": 9960
-    },
-    {
-      "Rank": 2,
-      "Country": "Mexico",
-      "GDP (nominal) (millions of US$)": 1864000,
-      "GDP (nominal) per capita (US$)": 12690
-    },
-    {
-      "Rank": 3,
-      "Country": "Argentina",
-      "GDP (nominal) (millions of US$)": 683530,
-      "GDP (nominal) per capita (US$)": 14360
-    },
-    {
-      "Rank": 4,
-      "Country": "Colombia",
-      "GDP (nominal) (millions of US$)": 438121,
-      "GDP (nominal) per capita (US$)": 8250
-    },
-    {
-      "Rank": 5,
-      "Country": "Chile",
-      "GDP (nominal) (millions of US$)": 343820,
-      "GDP (nominal) per capita (US$)": 17020
-    },
-    {
-      "Rank": 6,
-      "Country": "Peru",
-      "GDP (nominal) (millions of US$)": 323298,
-      "GDP (nominal) per capita (US$)": 8810
-    },
-    {
-      "Rank": 7,
-      "Country": "Dominican Republic",
-      "GDP (nominal) (millions of US$)": 127830,
-      "GDP (nominal) per capita (US$)": 11740
-    },
-    {
-      "Rank": 8,
-      "Country": "Ecuador",
-      "GDP (nominal) (millions of US$)": 125682,
-      "GDP (nominal) per capita (US$)": 6940
-    },
-    {
-      "Rank": 9,
-      "Country": "Guatemala",
-      "GDP (nominal) (millions of US$)": 121180,
-      "GDP (nominal) per capita (US$)": 5678
-    },
-    {
-      "Rank": 10,
-      "Country": "Venezuela",
-      "GDP (nominal) (millions of US$)": 108510,
-      "GDP (nominal) per capita (US$)": 3867
-    },
-    {
-      "Rank": 11,
-      "Country": "Costa Rica",
-      "GDP (nominal) (millions of US$)": 102590,
-      "GDP (nominal) per capita (US$)": 19100
-    },
-    {
-      "Rank": 12,
-      "Country": "Panama",
-      "GDP (nominal) (millions of US$)": 91680,
-      "GDP (nominal) per capita (US$)": 20080
-    },
-    {
-      "Rank": 13,
-      "Country": "Uruguay",
-      "GDP (nominal) (millions of US$)": 79735,
-      "GDP (nominal) per capita (US$)": 22069
-    },
-    {
-      "Rank": 14,
-      "Country": "Bolivia",
-      "GDP (nominal) (millions of US$)": 56340,
-      "GDP (nominal) per capita (US$)": 4530
-    },
-    {
-      "Rank": 15,
-      "Country": "Paraguay",
-      "GDP (nominal) (millions of US$)": 45470,
-      "GDP (nominal) per capita (US$)": 6524
-    },
-    {
-      "Rank": 16,
-      "Country": "Honduras",
-      "GDP (nominal) (millions of US$)": 38170,
-      "GDP (nominal) per capita (US$)": 3520
-    },
-    {
-      "Rank": 17,
-      "Country": "El Salvador",
-      "GDP (nominal) (millions of US$)": 36750,
-      "GDP (nominal) per capita (US$)": 5720
-    },
-    {
-      "Rank": 19,
-      "Country": "Haiti",
-      "GDP (nominal) (millions of US$)": 33550,
-      "GDP (nominal) per capita (US$)": 2670
-    },
-    {
-      "Rank": 18,
-      "Country": "Trinidad and Tobago",
-      "GDP (nominal) (millions of US$)": 26470,
-      "GDP (nominal) per capita (US$)": 18440
-    },
-    {
-      "Rank": 20,
-      "Country": "Guyana",
-      "GDP (nominal) (millions of US$)": 25820,
-      "GDP (nominal) per capita (US$)": 32330
-    },
-    {
-      "Rank": 21,
-      "Country": "Jamaica",
-      "GDP (nominal) (millions of US$)": 21098,
-      "GDP (nominal) per capita (US$)": 7780
-    },
-    {
-      "Rank": 22,
-      "Country": "Nicaragua",
-      "GDP (nominal) (millions of US$)": 21160,
-      "GDP (nominal) per capita (US$)": 3020
-    },
-    {
-      "Rank": 23,
-      "Country": "The Bahamas",
-      "GDP (nominal) (millions of US$)": 15180,
-      "GDP (nominal) per capita (US$)": 36780
-    },
-    {
-      "Rank": 24,
-      "Country": "Barbados",
-      "GDP (nominal) (millions of US$)": 7553,
-      "GDP (nominal) per capita (US$)": 25900
-    },
-    {
-      "Rank": 25,
-      "Country": "Suriname",
-      "GDP (nominal) (millions of US$)": 4510,
-      "GDP (nominal) per capita (US$)": 6860
-    },
-    {
-      "Rank": 26,
-      "Country": "Belize",
-      "GDP (nominal) (millions of US$)": 3610,
-      "GDP (nominal) per capita (US$)": 8650
-    },
-    {
-      "Rank": 27,
-      "Country": "Saint Lucia",
-      "GDP (nominal) (millions of US$)": 2630,
-      "GDP (nominal) per capita (US$)": 14500
-    },
-    {
-      "Rank": 28,
-      "Country": "Antigua and Barbuda",
-      "GDP (nominal) (millions of US$)": 2370,
-      "GDP (nominal) per capita (US$)": 22630
-    },
-    {
-      "Rank": 29,
-      "Country": "Grenada",
-      "GDP (nominal) (millions of US$)": 1460,
-      "GDP (nominal) per capita (US$)": 12590
-    },
-    {
-      "Rank": 30,
-      "Country": "Saint Kitts and Nevis",
-      "GDP (nominal) (millions of US$)": 1130,
-      "GDP (nominal) per capita (US$)": 21910
-    },
-    {
-      "Rank": 31,
-      "Country": "Saint Vincent and the Grenadines",
-      "GDP (nominal) (millions of US$)": 1240,
-      "GDP (nominal) per capita (US$)": 11160
-    },
-    {
-      "Rank": 32,
-      "Country": "Dominica",
-      "GDP (nominal) (millions of US$)": 748,
-      "GDP (nominal) per capita (US$)": 9870
-    }
-  ],
-  "North America": [
-    {
-      "Region rank": "—",
-      "World rank": "—",
-      "Country": "North America",
-      "2024 GDP (nominal) millions of US Dollars": "34004774"
-    },
-    {
-      "Region rank": "1",
-      "World rank": "1",
+      "Region": "North America",
       "Country": "United States",
-      "2024 GDP (nominal) millions of US Dollars": "29184900"
+      "GDP (1B USD)": 29184.9
     },
     {
-      "Region rank": "2",
-      "World rank": "9",
-      "Country": "Canada",
-      "2024 GDP (nominal) millions of US Dollars": "2241253"
+      "Region": "Asia-Pacific",
+      "Country": "China",
+      "GDP (1B USD)": 17700.9
     },
     {
-      "Region rank": "3",
-      "World rank": "13",
-      "Country": "Mexico",
-      "2024 GDP (nominal) millions of US Dollars": "1852723"
-    },
-    {
-      "Region rank": "4",
-      "World rank": "63",
-      "Country": "Dominican Republic",
-      "2024 GDP (nominal) millions of US Dollars": "124613"
-    },
-    {
-      "Region rank": "5",
-      "World rank": "70",
-      "Country": "Guatemala",
-      "2024 GDP (nominal) millions of US Dollars": "112575"
-    },
-    {
-      "Region rank": "-",
-      "World rank": "-",
-      "Country": "Cuba",
-      "2024 GDP (nominal) millions of US Dollars": "107,352 (2020)"
-    },
-    {
-      "Region rank": "6",
-      "World rank": "74",
-      "Country": "Costa Rica",
-      "2024 GDP (nominal) millions of US Dollars": "95365"
-    },
-    {
-      "Region rank": "7",
-      "World rank": "78",
-      "Country": "Panama",
-      "2024 GDP (nominal) millions of US Dollars": "87688"
-    },
-    {
-      "Region rank": "8",
-      "World rank": "103",
-      "Country": "Honduras",
-      "2024 GDP (nominal) millions of US Dollars": "36965"
-    },
-    {
-      "Region rank": "9",
-      "World rank": "105",
-      "Country": "El Salvador",
-      "2024 GDP (nominal) millions of US Dollars": "35337"
-    },
-    {
-      "Region rank": "10",
-      "World rank": "116",
-      "Country": "Haiti",
-      "2024 GDP (nominal) millions of US Dollars": "26229"
-    },
-    {
-      "Region rank": "11",
-      "World rank": "119",
-      "Country": "Trinidad and Tobago",
-      "2024 GDP (nominal) millions of US Dollars": "25524"
-    },
-    {
-      "Region rank": "12",
-      "World rank": "128",
-      "Country": "Jamaica",
-      "2024 GDP (nominal) millions of US Dollars": "20069"
-    },
-    {
-      "Region rank": "13",
-      "World rank": "130",
-      "Country": "Nicaragua",
-      "2024 GDP (nominal) millions of US Dollars": "19710"
-    },
-    {
-      "Region rank": "14",
-      "World rank": "142",
-      "Country": "The Bahamas",
-      "2024 GDP (nominal) millions of US Dollars": "14761"
-    },
-    {
-      "Region rank": "15",
-      "World rank": "154",
-      "Country": "Barbados",
-      "2024 GDP (nominal) millions of US Dollars": "7167"
-    },
-    {
-      "Region rank": "16",
-      "World rank": "165",
-      "Country": "Belize",
-      "2024 GDP (nominal) millions of US Dollars": "3427"
-    },
-    {
-      "Region rank": "17",
-      "World rank": "170",
-      "Country": "Saint Lucia",
-      "2024 GDP (nominal) millions of US Dollars": "2523"
-    },
-    {
-      "Region rank": "18",
-      "World rank": "172",
-      "Country": "Antigua and Barbuda",
-      "2024 GDP (nominal) millions of US Dollars": "2225"
-    },
-    {
-      "Region rank": "19",
-      "World rank": "179",
-      "Country": "Grenada",
-      "2024 GDP (nominal) millions of US Dollars": "1392"
-    },
-    {
-      "Region rank": "20",
-      "World rank": "181",
-      "Country": "Saint Vincent and the Grenadines",
-      "2024 GDP (nominal) millions of US Dollars": "1162"
-    },
-    {
-      "Region rank": "21",
-      "World rank": "182",
-      "Country": "Saint Kitts and Nevis",
-      "2024 GDP (nominal) millions of US Dollars": "1117"
-    },
-    {
-      "Region rank": "22",
-      "World rank": "185",
-      "Country": "Dominica",
-      "2024 GDP (nominal) millions of US Dollars": "697"
-    }
-  ],
-  "Oceania": [
-    {
-      "Country": "Australia",
-      "GDP US Dollars ($mil)": 1796805,
-      "GDP per capita US Dollars": 66248,
-      "PPP Int'l Dollars ($mil)": 1897774,
-      "PPP per capita Int'l Dollars": 69971
-    },
-    {
-      "Country": "New Zealand",
-      "GDP US Dollars ($mil)": 257728,
-      "GDP per capita US Dollars": 48310,
-      "PPP Int'l Dollars ($mil)": 287258,
-      "PPP per capita Int'l Dollars": 53846
-    },
-    {
-      "Country": "Papua New Guinea",
-      "GDP US Dollars ($mil)": 31654,
-      "GDP per capita US Dollars": 2524,
-      "PPP Int'l Dollars ($mil)": 44810,
-      "PPP per capita Int'l Dollars": 3574
-    },
-    {
-      "Country": "Fiji",
-      "GDP US Dollars ($mil)": 5949,
-      "GDP per capita US Dollars": 6447,
-      "PPP Int'l Dollars ($mil)": 14867,
-      "PPP per capita Int'l Dollars": 16112
-    },
-    {
-      "Country": "Solomon Islands",
-      "GDP US Dollars ($mil)": 1777,
-      "GDP per capita US Dollars": 2269,
-      "PPP Int'l Dollars ($mil)": 2054,
-      "PPP per capita Int'l Dollars": 2622
-    },
-    {
-      "Country": "Vanuatu",
-      "GDP US Dollars ($mil)": 1206,
-      "GDP per capita US Dollars": 3492,
-      "PPP Int'l Dollars ($mil)": 1025,
-      "PPP per capita Int'l Dollars": 2968
-    },
-    {
-      "Country": "Samoa",
-      "GDP US Dollars ($mil)": 1068,
-      "GDP per capita US Dollars": 5070,
-      "PPP Int'l Dollars ($mil)": 1493,
-      "PPP per capita Int'l Dollars": 7089
-    },
-    {
-      "Country": "Tonga",
-      "GDP US Dollars ($mil)": 539,
-      "GDP per capita US Dollars": 5416,
-      "PPP Int'l Dollars ($mil)": 761,
-      "PPP per capita Int'l Dollars": 7654
-    },
-    {
-      "Country": "Federated States of Micronesia",
-      "GDP US Dollars ($mil)": 471,
-      "GDP per capita US Dollars": 4986,
-      "PPP Int'l Dollars ($mil)": 434,
-      "PPP per capita Int'l Dollars": 4595
-    },
-    {
-      "Country": "Kiribati",
-      "GDP US Dollars ($mil)": 308,
-      "GDP per capita US Dollars": 2419,
-      "PPP Int'l Dollars ($mil)": 449,
-      "PPP per capita Int'l Dollars": 3530
-    },
-    {
-      "Country": "Palau",
-      "GDP US Dollars ($mil)": 306,
-      "GDP per capita US Dollars": 17406,
-      "PPP Int'l Dollars ($mil)": 296,
-      "PPP per capita Int'l Dollars": 16868
-    },
-    {
-      "Country": "Marshall Islands",
-      "GDP US Dollars ($mil)": 280,
-      "GDP per capita US Dollars": 7303,
-      "PPP Int'l Dollars ($mil)": 267,
-      "PPP per capita Int'l Dollars": 6946
-    },
-    {
-      "Country": "Nauru",
-      "GDP US Dollars ($mil)": 161,
-      "GDP per capita US Dollars": 12318,
-      "PPP Int'l Dollars ($mil)": 142,
-      "PPP per capita Int'l Dollars": 10860
-    },
-    {
-      "Country": "Tuvalu",
-      "GDP US Dollars ($mil)": 65,
-      "GDP per capita US Dollars": 6599,
-      "PPP Int'l Dollars ($mil)": 66,
-      "PPP per capita Int'l Dollars": 6658
-    }
-  ],
-  "Europe": [
-    {
-      "Country": NaN,
-      "2030": NaN,
-      "2025": NaN,
-      "2024": NaN,
-      "2023": NaN,
-      "2022": NaN,
-      "2021": NaN,
-      "2020": NaN,
-      "2019": NaN,
-      "2018": NaN,
-      "2017": NaN,
-      "2016": NaN,
-      "2015": NaN,
-      "2014": NaN,
-      "2013": NaN,
-      "2012": NaN,
-      "2011": NaN,
-      "2010": NaN
-    },
-    {
+      "Region": "Europe",
       "Country": "Germany",
-      "2030": 6013749.0,
-      "2025": 5013574.0,
-      "2024": 4684182.0,
-      "2023": 4563523.0,
-      "2022": 4204327.0,
-      "2021": 4358188.0,
-      "2020": 3938244.0,
-      "2019": 3957645.0,
-      "2018": 4053846.0,
-      "2017": 3761764.0,
-      "2016": 3536808.0,
-      "2015": 3423915.0,
-      "2014": 3966823.0,
-      "2013": 3808142.0,
-      "2012": 3600175.0,
-      "2011": 3824155.0,
-      "2010": 3470987.0
+      "GDP (1B USD)": 5013.57
     },
     {
+      "Region": "Asia-Pacific",
+      "Country": "Japan",
+      "GDP (1B USD)": 4230.86
+    },
+    {
+      "Region": "Europe",
       "Country": "United Kingdom",
-      "2030": 5199779.0,
-      "2025": 3958780.0,
-      "2024": 3644636.0,
-      "2023": 3371118.0,
-      "2022": 3125404.0,
-      "2021": 3144079.0,
-      "2020": 2698705.0,
-      "2019": 2853074.0,
-      "2018": 2875024.0,
-      "2017": 2682384.0,
-      "2016": 2699086.0,
-      "2015": 2928558.0,
-      "2014": 3066304.0,
-      "2013": 2786665.0,
-      "2012": 2707571.0,
-      "2011": 2664719.0,
-      "2010": 2487924.0
+      "GDP (1B USD)": 3958.78
     },
     {
+      "Region": "Commonwealth",
+      "Country": "India",
+      "GDP (1B USD)": 3889.13
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "India",
+      "GDP (1B USD)": 3732.22
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "United Kingdom",
+      "GDP (1B USD)": 3587.54
+    },
+    {
+      "Region": "Europe",
       "Country": "France",
-      "2030": 4009171.0,
-      "2025": 3361557.0,
-      "2024": 3160902.0,
-      "2023": 3061093.0,
-      "2022": 2796987.0,
-      "2021": 2968405.0,
-      "2020": 2645806.0,
-      "2019": 2723094.0,
-      "2018": 2782838.0,
-      "2017": 2587955.0,
-      "2016": 2469726.0,
-      "2015": 2442731.0,
-      "2014": 2861973.0,
-      "2013": 2816119.0,
-      "2012": 2684706.0,
-      "2011": 2869903.0,
-      "2010": 2648391.0
+      "GDP (1B USD)": 3361.56
     },
     {
+      "Region": "Europe",
       "Country": "Italy",
-      "2030": 2779440.0,
-      "2025": 2422855.0,
-      "2024": 2372059.0,
-      "2023": 2305271.0,
-      "2022": 2105722.0,
-      "2021": 2180656.0,
-      "2020": 1905956.0,
-      "2019": 2019831.0,
-      "2018": 2100387.0,
-      "2017": 1970027.0,
-      "2016": 1886590.0,
-      "2015": 1845615.0,
-      "2014": 2173815.0,
-      "2013": 2153259.0,
-      "2012": 2099259.0,
-      "2011": 2306568.0,
-      "2010": 2146687.0
+      "GDP (1B USD)": 2422.86
     },
     {
+      "Region": "North America",
+      "Country": "Canada",
+      "GDP (1B USD)": 2241.25
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "Canada",
+      "GDP (1B USD)": 2214.8
+    },
+    {
+      "Region": "Latin America and Caribbean",
+      "Country": "Brazil",
+      "GDP (1B USD)": 2130.39
+    },
+    {
+      "Region": "Europe",
       "Country": "Russia",
-      "2030": 2384213.0,
-      "2025": 2076396.0,
-      "2024": 2161205.0,
-      "2023": 2059762.0,
-      "2022": 2295527.0,
-      "2021": 1828927.0,
-      "2020": 1488118.0,
-      "2019": 1695724.0,
-      "2018": 1653005.0,
-      "2017": 1575140.0,
-      "2016": 1280648.0,
-      "2015": 1356703.0,
-      "2014": 2048837.0,
-      "2013": 2288428.0,
-      "2012": 2191486.0,
-      "2011": 2046621.0,
-      "2010": 1633111.0
+      "GDP (1B USD)": 2076.4
     },
     {
+      "Region": "Latin America and Caribbean",
+      "Country": "Mexico",
+      "GDP (1B USD)": 1864.0
+    },
+    {
+      "Region": "North America",
+      "Country": "Mexico",
+      "GDP (1B USD)": 1852.72
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "Australia",
+      "GDP (1B USD)": 1802.01
+    },
+    {
+      "Region": "Europe",
       "Country": "Spain",
-      "2030": 2201213.0,
-      "2025": 1799511.0,
-      "2024": 1722227.0,
-      "2023": 1620558.0,
-      "2022": 1447636.0,
-      "2021": 1462216.0,
-      "2020": 1288751.0,
-      "2019": 1403651.0,
-      "2018": 1432292.0,
-      "2017": 1321288.0,
-      "2016": 1242673.0,
-      "2015": 1206287.0,
-      "2014": 1380600.0,
-      "2013": 1362207.0,
-      "2012": 1331838.0,
-      "2011": 1487307.0,
-      "2010": 1429155.0
+      "GDP (1B USD)": 1799.51
     },
     {
+      "Region": "Oceania",
+      "Country": "Australia",
+      "GDP (1B USD)": 1796.8
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "South Korea",
+      "GDP (1B USD)": 1709.23
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "Australia",
+      "GDP (1B USD)": 1687.71
+    },
+    {
+      "Region": "Europe",
       "Country": "Turkey",
-      "2030": 2325620.0,
-      "2025": 1567406.0,
-      "2024": 1322405.0,
-      "2023": 1130062.0,
-      "2022": 905800.0,
-      "2021": 807893.0,
-      "2020": 717114.0,
-      "2019": 760388.0,
-      "2018": 797707.0,
-      "2017": 859020.0,
-      "2016": 869204.0,
-      "2015": 867054.0,
-      "2014": 939924.0,
-      "2013": 958088.0,
-      "2012": 877681.0,
-      "2011": 837924.0,
-      "2010": 777443.0
+      "GDP (1B USD)": 1567.41
     },
     {
+      "Region": "Asia-Pacific",
+      "Country": "Indonesia",
+      "GDP (1B USD)": 1417.39
+    },
+    {
+      "Region": "Arab League",
+      "Country": "Saudi Arabia",
+      "GDP (1B USD)": 1320.0
+    },
+    {
+      "Region": "Europe",
       "Country": "Netherlands",
-      "2030": 1514003.0,
-      "2025": 1272011.0,
-      "2024": 1227174.0,
-      "2023": 1154694.0,
-      "2022": 1047364.0,
-      "2021": 1055173.0,
-      "2020": 931814.0,
-      "2019": 929006.0,
-      "2018": 930155.0,
-      "2017": 847934.0,
-      "2016": 796944.0,
-      "2015": 775822.0,
-      "2014": 901789.0,
-      "2013": 883964.0,
-      "2012": 846225.0,
-      "2011": 912980.0,
-      "2010": 853161.0
+      "GDP (1B USD)": 1272.01
     },
     {
+      "Region": "Europe",
       "Country": "Poland",
-      "2030": 1304959.0,
-      "2025": 979960.0,
-      "2024": 908583.0,
-      "2023": 809706.0,
-      "2022": 695734.0,
-      "2021": 689253.0,
-      "2020": 605930.0,
-      "2019": 602592.0,
-      "2018": 594641.0,
-      "2017": 528497.0,
-      "2016": 472883.0,
-      "2015": 479729.0,
-      "2014": 542266.0,
-      "2013": 518180.0,
-      "2012": 498149.0,
-      "2011": 527848.0,
-      "2010": 478111.0
+      "GDP (1B USD)": 979.96
     },
     {
+      "Region": "Europe",
       "Country": "Switzerland",
-      "2030": 1162661.0,
-      "2025": 947125.0,
-      "2024": 936738.0,
-      "2023": 894867.0,
-      "2022": 828522.0,
-      "2021": 814699.0,
-      "2020": 741288.0,
-      "2019": 721867.0,
-      "2018": 725910.0,
-      "2017": 695544.0,
-      "2016": 687771.0,
-      "2015": 693805.0,
-      "2014": 726634.0,
-      "2013": 706748.0,
-      "2012": 686553.0,
-      "2011": 715864.0,
-      "2010": 598339.0
+      "GDP (1B USD)": 947.12
     },
     {
+      "Region": "Asia-Pacific",
+      "Country": "Taiwan",
+      "GDP (1B USD)": 751.93
+    },
+    {
+      "Region": "Europe",
       "Country": "Belgium",
-      "2030": 791414.0,
-      "2025": 684864.0,
-      "2024": 664965.0,
-      "2023": 644968.0,
-      "2022": 593906.0,
-      "2021": 598892.0,
-      "2020": 529269.0,
-      "2019": 536787.0,
-      "2018": 542885.0,
-      "2017": 500733.0,
-      "2016": 474141.0,
-      "2015": 461091.0,
-      "2014": 538127.0,
-      "2013": 524106.0,
-      "2012": 498731.0,
-      "2011": 527106.0,
-      "2010": 481949.0
+      "GDP (1B USD)": 684.86
     },
     {
+      "Region": "Latin America and Caribbean",
+      "Country": "Argentina",
+      "GDP (1B USD)": 683.53
+    },
+    {
+      "Region": "Europe",
       "Country": "Sweden",
-      "2030": 761499.0,
-      "2025": 620297.0,
-      "2024": 610118.0,
-      "2023": 585490.0,
-      "2022": 579896.0,
-      "2021": 637187.0,
-      "2020": 545148.0,
-      "2019": 532169.0,
-      "2018": 551312.0,
-      "2017": 536084.0,
-      "2016": 514218.0,
-      "2015": 501698.0,
-      "2014": 577730.0,
-      "2013": 584128.0,
-      "2012": 549742.0,
-      "2011": 570541.0,
-      "2010": 492753.0
+      "GDP (1B USD)": 620.3
     },
     {
+      "Region": "Arab League",
+      "Country": "United Arab Emirates",
+      "GDP (1B USD)": 601.16
+    },
+    {
+      "Region": "Europe",
       "Country": "Ireland",
-      "2030": 734181.0,
-      "2025": 598840.0,
-      "2024": 577216.0,
-      "2023": 551554.0,
-      "2022": 549003.0,
-      "2021": 531660.0,
-      "2020": 436205.0,
-      "2019": 407170.0,
-      "2018": 395641.0,
-      "2017": 348411.0,
-      "2016": 305649.0,
-      "2015": 302422.0,
-      "2014": 266857.0,
-      "2013": 243305.0,
-      "2012": 227415.0,
-      "2011": 241295.0,
-      "2010": 222167.0
+      "GDP (1B USD)": 598.84
     },
     {
+      "Region": "Europe",
       "Country": "Austria",
-      "2030": 628259.0,
-      "2025": 534301.0,
-      "2024": 521269.0,
-      "2023": 512509.0,
-      "2022": 472339.0,
-      "2021": 480786.0,
-      "2020": 434050.0,
-      "2019": 443033.0,
-      "2018": 452787.0,
-      "2017": 414780.0,
-      "2016": 393579.0,
-      "2015": 379584.0,
-      "2014": 438669.0,
-      "2013": 426587.0,
-      "2012": 407008.0,
-      "2011": 428879.0,
-      "2010": 390146.0
+      "GDP (1B USD)": 534.3
     },
     {
+      "Region": "Commonwealth",
+      "Country": "Singapore",
+      "GDP (1B USD)": 530.71
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "Thailand",
+      "GDP (1B USD)": 512.19
+    },
+    {
+      "Region": "Europe",
       "Country": "Norway",
-      "2030": 591969.0,
-      "2025": 504276.0,
-      "2024": 483727.0,
-      "2023": 482950.0,
-      "2022": 596298.0,
-      "2021": 503368.0,
-      "2020": 367633.0,
-      "2019": 408743.0,
-      "2018": 439789.0,
-      "2017": 401745.0,
-      "2016": 370957.0,
-      "2015": 388160.0,
-      "2014": 501737.0,
-      "2013": 526014.0,
-      "2012": 512777.0,
-      "2011": 501361.0,
-      "2010": 431052.0
+      "GDP (1B USD)": 504.28
     },
     {
+      "Region": "Asia-Pacific",
+      "Country": "Singapore",
+      "GDP (1B USD)": 497.35
+    },
+    {
+      "Region": "Africa",
+      "Country": "South Africa",
+      "GDP (1B USD)": 479.96
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "Bangladesh",
+      "GDP (1B USD)": 451.47
+    },
+    {
+      "Region": "Europe",
       "Country": "Denmark",
-      "2030": 554224.0,
-      "2025": 449940.0,
-      "2024": 429458.0,
-      "2023": 407092.0,
-      "2022": 401946.0,
-      "2021": 408378.0,
-      "2020": 355631.0,
-      "2019": 345402.0,
-      "2018": 355293.0,
-      "2017": 331611.0,
-      "2016": 312182.0,
-      "2015": 301759.0,
-      "2014": 352833.0,
-      "2013": 344631.0,
-      "2012": 326793.0,
-      "2011": 344316.0,
-      "2010": 322346.0
+      "GDP (1B USD)": 449.94
     },
     {
+      "Region": "Asia-Pacific",
+      "Country": "Bangladesh",
+      "GDP (1B USD)": 446.35
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "Malaysia",
+      "GDP (1B USD)": 439.75
+    },
+    {
+      "Region": "Latin America and Caribbean",
+      "Country": "Colombia",
+      "GDP (1B USD)": 438.12
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "Philippines",
+      "GDP (1B USD)": 435.68
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "Vietnam",
+      "GDP (1B USD)": 433.36
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "Malaysia",
+      "GDP (1B USD)": 430.9
+    },
+    {
+      "Region": "Africa",
+      "Country": "Egypt",
+      "GDP (1B USD)": 429.64
+    },
+    {
+      "Region": "Arab League",
+      "Country": "Egypt",
+      "GDP (1B USD)": 429.64
+    },
+    {
+      "Region": "Europe",
       "Country": "Romania",
-      "2030": 524867.0,
-      "2025": 403395.0,
-      "2024": 384148.0,
-      "2023": 350847.0,
-      "2022": 296928.0,
-      "2021": 286783.0,
-      "2020": 252372.0,
-      "2019": 251652.0,
-      "2018": 243651.0,
-      "2017": 210530.0,
-      "2016": 185337.0,
-      "2015": 177878.0,
-      "2014": 199989.0,
-      "2013": 189839.0,
-      "2012": 179228.0,
-      "2011": 192846.0,
-      "2010": 170329.0
+      "GDP (1B USD)": 403.4
     },
     {
+      "Region": "Commonwealth",
+      "Country": "South Africa",
+      "GDP (1B USD)": 403.04
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "Hong Kong (China)",
+      "GDP (1B USD)": 385.55
+    },
+    {
+      "Region": "Africa",
+      "Country": "Nigeria",
+      "GDP (1B USD)": 377.36
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "Pakistan",
+      "GDP (1B USD)": 374.6
+    },
+    {
+      "Region": "Europe",
       "Country": "Czech Republic",
-      "2030": 438859.0,
-      "2025": 360244.0,
-      "2024": 344931.0,
-      "2023": 343207.0,
-      "2022": 301831.0,
-      "2021": 290973.0,
-      "2020": 251110.0,
-      "2019": 256794.0,
-      "2018": 251992.0,
-      "2017": 221564.0,
-      "2016": 198161.0,
-      "2015": 189108.0,
-      "2014": 210911.0,
-      "2013": 213024.0,
-      "2012": 210363.0,
-      "2011": 231429.0,
-      "2010": 211169.0
+      "GDP (1B USD)": 360.24
     },
     {
-      "Country": "Kazakhstan",
-      "2030": 425854.0,
-      "2025": 300538.0,
-      "2024": 284810.0,
-      "2023": 261840.0,
-      "2022": 225496.0,
-      "2021": 197112.0,
-      "2020": 171082.0,
-      "2019": 181667.0,
-      "2018": 179340.0,
-      "2017": 166806.0,
-      "2016": 137278.0,
-      "2015": 184388.0,
-      "2014": 221416.0,
-      "2013": 236635.0,
-      "2012": 207999.0,
-      "2011": 192626.0,
-      "2010": 148047.0
+      "Region": "Latin America and Caribbean",
+      "Country": "Chile",
+      "GDP (1B USD)": 343.82
     },
     {
+      "Region": "Asia-Pacific",
+      "Country": "Pakistan",
+      "GDP (1B USD)": 338.24
+    },
+    {
+      "Region": "Latin America and Caribbean",
+      "Country": "Peru",
+      "GDP (1B USD)": 323.3
+    },
+    {
+      "Region": "Europe",
       "Country": "Portugal",
-      "2030": 388164.0,
-      "2025": 321440.0,
-      "2024": 308590.0,
-      "2023": 289781.0,
-      "2022": 257101.0,
-      "2021": 256226.0,
-      "2020": 229435.0,
-      "2019": 240142.0,
-      "2018": 242203.0,
-      "2017": 220785.0,
-      "2016": 206249.0,
-      "2015": 199059.0,
-      "2014": 230138.0,
-      "2013": 226681.0,
-      "2012": 216674.0,
-      "2011": 245383.0,
-      "2010": 238639.0
+      "GDP (1B USD)": 321.44
     },
     {
+      "Region": "Arab League",
+      "Country": "Algeria",
+      "GDP (1B USD)": 317.17
+    },
+    {
+      "Region": "Africa",
+      "Country": "Algeria",
+      "GDP (1B USD)": 317.17
+    },
+    {
+      "Region": "Europe",
       "Country": "Finland",
-      "2030": 361008.0,
-      "2025": 303945.0,
-      "2024": 298833.0,
-      "2023": 295036.0,
-      "2022": 280474.0,
-      "2021": 294419.0,
-      "2020": 269784.0,
-      "2019": 267044.0,
-      "2018": 273993.0,
-      "2017": 253757.0,
-      "2016": 238712.0,
-      "2015": 233234.0,
-      "2014": 273549.0,
-      "2013": 270272.0,
-      "2012": 257606.0,
-      "2011": 275079.0,
-      "2010": 249633.0
+      "GDP (1B USD)": 303.94
     },
     {
+      "Region": "Europe",
+      "Country": "Kazakhstan",
+      "GDP (1B USD)": 300.54
+    },
+    {
+      "Region": "Arab League",
+      "Country": "Iraq",
+      "GDP (1B USD)": 273.91
+    },
+    {
+      "Region": "Europe",
       "Country": "Greece",
-      "2030": 319516.0,
-      "2025": 267348.0,
-      "2024": 257067.0,
-      "2023": 243569.0,
-      "2022": 219053.0,
-      "2021": 218449.0,
-      "2020": 191210.0,
-      "2019": 207329.0,
-      "2018": 213396.0,
-      "2017": 200310.0,
-      "2016": 193044.0,
-      "2015": 194587.0,
-      "2014": 233972.0,
-      "2013": 236560.0,
-      "2012": 238992.0,
-      "2011": 283178.0,
-      "2010": 296660.0
+      "GDP (1B USD)": 267.35
     },
     {
+      "Region": "Oceania",
+      "Country": "New Zealand",
+      "GDP (1B USD)": 257.73
+    },
+    {
+      "Region": "Commonwealth",
+      "Country": "New Zealand",
+      "GDP (1B USD)": 252.24
+    },
+    {
+      "Region": "Asia-Pacific",
+      "Country": "New Zealand",
+      "GDP (1B USD)": 249.42
+    },
+    {
+      "Region": "Arab League",
+      "Country": "Qatar",
+      "GDP (1B USD)": 239.14
+    },
+    {
+      "Region": "Europe",
       "Country": "Hungary",
-      "2030": 317342.0,
-      "2025": 237070.0,
-      "2024": 223060.0,
-      "2023": 214098.0,
-      "2022": 178321.0,
-      "2021": 183283.0,
-      "2020": 158468.0,
-      "2019": 164927.0,
-      "2018": 161185.0,
-      "2017": 143335.0,
-      "2016": 128984.0,
-      "2015": 125244.0,
-      "2014": 141129.0,
-      "2013": 135646.0,
-      "2012": 128470.0,
-      "2011": 141713.0,
-      "2010": 131899.0
+      "GDP (1B USD)": 237.07
     },
     {
+      "Region": "Europe",
       "Country": "Ukraine",
-      "2030": 283321.0,
-      "2025": 205742.0,
-      "2024": 190426.0,
-      "2023": 178763.0,
-      "2022": 161987.0,
-      "2021": 199835.0,
-      "2020": 156566.0,
-      "2019": 153904.0,
-      "2018": 130905.0,
-      "2017": 112064.0,
-      "2016": 93349.0,
-      "2015": 90922.0,
-      "2014": 133392.0,
-      "2013": 183310.0,
-      "2012": 175781.0,
-      "2011": 163059.0,
-      "2010": 136011.0
+      "GDP (1B USD)": 205.74
     },
     {
+      "Region": "Commonwealth",
+      "Country": "Nigeria",
+      "GDP (1B USD)": 199.72
+    },
+    {
+      "Region": "Arab League",
+      "Country": "Morocco",
+      "GDP (1B USD)": 194.33
+    },
+    {
+      "Region": "Africa",
+      "Country": "Morocco",
+      "GDP (1B USD)": 194.33
+    },
+    {
+      "Region": "Arab League",
+      "Country": "Kuwait",
+      "GDP (1B USD)": 162.9
+    },
+    {
+      "Region": "Africa",
+      "Country": "Angola",
+      "GDP (1B USD)": 152.35
+    },
+    {
+      "Region": "Africa",
+      "Country": "Kenya",
+      "GDP (1B USD)": 147.26
+    },
+    {
+      "Region": "Europe",
       "Country": "Slovakia",
-      "2030": 184366.0,
-      "2025": 147031.0,
-      "2024": 140636.0,
-      "2023": 132947.0,
-      "2022": 116020.0,
-      "2021": 120672.0,
-      "2020": 107646.0,
-      "2019": 105855.0,
-      "2018": 106660.0,
-      "2017": 95944.0,
-      "2016": 90322.0,
-      "2015": 89188.0,
-      "2014": 101739.0,
-      "2013": 99136.0,
-      "2012": 94784.0,
-      "2011": 99688.0,
-      "2010": 91187.0
+      "GDP (1B USD)": 147.03
     },
     {
+      "Region": "Latin America and Caribbean",
+      "Country": "Dominican Republic",
+      "GDP (1B USD)": 127.83
+    },
+    {
+      "Region": "Latin America and Caribbean",
+      "Country": "Ecuador",
+      "GDP (1B USD)": 125.68
+    },
+    {
+      "Region": "North America",
+      "Country": "Dominican Republic",
+      "GDP (1B USD)": 124.61
+    },
+    {
+      "Region": "Africa",
+      "Country": "Democratic Republic of the Congo",
+      "GDP (1B USD)": 123.41
+    },
+    {
+      "Region": "Africa",
+      "Country": "Ethiopia",
+      "GDP (1B USD)": 121.53
+    },
+    {
+      "Region": "Latin America and Caribbean",
+      "Country": "Guatemala",
+      "GDP (1B USD)": 121.18
+    },
+    {
+      "Region": "Africa",
+      "Country": "Ghana",
+      "GDP (1B USD)": 118.29
+    },
+    {
+      "Region": "Europe",
       "Country": "Bulgaria",
-      "2030": 150310.0,
-      "2025": 117007.0,
-      "2024": 112232.0,
-      "2023": 102434.0,
-      "2022": 90719.0,
-      "2021": 84477.0,
-      "2020": 70658.0,
-      "2019": 68639.0,
-      "2018": 66318.0,
-      "2017": 59288.0,
-      "2016": 53929.0,
-      "2015": 50766.0,
-      "2014": 57081.0,
-      "2013": 55820.0,
-      "2012": 54297.0,
-      "2011": 57682.0,
-      "2010": 50690.0
+      "GDP (1B USD)": 117.01
     },
     {
-      "Country": "Serbia",
-      "2030": 132629.0,
-      "2025": 92549.0,
-      "2024": 89074.0,
-      "2023": 81343.0,
-      "2022": 66798.0,
-      "2021": 65830.0,
-      "2020": 55874.0,
-      "2019": 53865.0,
-      "2018": 52788.0,
-      "2017": 45973.0,
-      "2016": 42225.0,
-      "2015": 41297.0,
-      "2014": 49114.0,
-      "2013": 50456.0,
-      "2012": 45111.0,
-      "2011": 51274.0,
-      "2010": 43067.0
+      "Region": "North America",
+      "Country": "Guatemala",
+      "GDP (1B USD)": 112.58
     },
     {
-      "Country": "Croatia",
-      "2030": 126466.0,
-      "2025": 98951.0,
-      "2024": 92506.0,
-      "2023": 84416.0,
-      "2022": 71260.0,
-      "2021": 69055.0,
-      "2020": 57919.0,
-      "2019": 61472.0,
-      "2018": 61694.0,
-      "2017": 56166.0,
-      "2016": 52640.0,
-      "2015": 51012.0,
-      "2014": 59628.0,
-      "2013": 59854.0,
-      "2012": 57585.0,
-      "2011": 62889.0,
-      "2010": 59032.0
+      "Region": "Africa",
+      "Country": "Côte d'Ivoire",
+      "GDP (1B USD)": 112.12
     },
     {
-      "Country": "Luxembourg",
-      "2030": 118641.0,
-      "2025": 96613.0,
-      "2024": 93169.0,
-      "2023": 87599.0,
-      "2022": 80865.0,
-      "2021": 86444.0,
-      "2020": 73612.0,
-      "2019": 69880.0,
-      "2018": 71118.0,
-      "2017": 65689.0,
-      "2016": 62200.0,
-      "2015": 60078.0,
-      "2014": 68823.0,
-      "2013": 65204.0,
-      "2012": 59814.0,
-      "2011": 61685.0,
-      "2010": 56260.0
+      "Region": "Arab League",
+      "Country": "Oman",
+      "GDP (1B USD)": 108.91
     },
     {
-      "Country": "Lithuania",
-      "2030": 114355.0,
-      "2025": 89192.0,
-      "2024": 84847.0,
-      "2023": 79824.0,
-      "2022": 71082.0,
-      "2021": 67068.0,
-      "2020": 57352.0,
-      "2019": 55132.0,
-      "2018": 54294.0,
-      "2017": 47745.0,
-      "2016": 42952.0,
-      "2015": 41548.0,
-      "2014": 48388.0,
-      "2013": 46321.0,
-      "2012": 42736.0,
-      "2011": 43201.0,
-      "2010": 36693.0
+      "Region": "Latin America and Caribbean",
+      "Country": "Venezuela",
+      "GDP (1B USD)": 108.51
     },
     {
-      "Country": "Azerbaijan",
-      "2030": 100895.0,
-      "2025": 78870.0,
-      "2024": 74316.0,
-      "2023": 72428.0,
-      "2022": 78807.0,
-      "2021": 54825.0,
-      "2020": 42693.0,
-      "2019": 48174.0,
-      "2018": 47113.0,
-      "2017": 41375.0,
-      "2016": 37830.0,
-      "2015": 52997.0,
-      "2014": 75235.0,
-      "2013": 74164.0,
-      "2012": 69684.0,
-      "2011": 65952.0,
-      "2010": 52909.0
+      "Region": "North America",
+      "Country": "Cuba",
+      "GDP (1B USD)": 107.35
     },
     {
-      "Country": "Slovenia",
-      "2030": 94032.0,
-      "2025": 75224.0,
-      "2024": 72463.0,
-      "2023": 69168.0,
-      "2022": 59975.0,
-      "2021": 61570.0,
-      "2020": 53342.0,
-      "2019": 53916.0,
-      "2018": 53713.0,
-      "2017": 48136.0,
-      "2016": 44279.0,
-      "2015": 42714.0,
-      "2014": 49527.0,
-      "2013": 47868.0,
-      "2012": 46196.0,
-      "2011": 51190.0,
-      "2010": 47832.0
+      "Region": "Latin America and Caribbean",
+      "Country": "Costa Rica",
+      "GDP (1B USD)": 102.59
+    }
+  ],
+  "top5_average_by_region": [
+    {
+      "Region": "Africa",
+      "Top 5 Average GDP (1B USD)": 359.69
     },
     {
-      "Country": "Belarus",
-      "2030": 87879.0,
-      "2025": 71561.0,
-      "2024": 71180.0,
-      "2023": 71792.0,
-      "2022": 73735.0,
-      "2021": 68207.0,
-      "2020": 61312.0,
-      "2019": 64414.0,
-      "2018": 60011.0,
-      "2017": 54723.0,
-      "2016": 47703.0,
-      "2015": 56329.0,
-      "2014": 78736.0,
-      "2013": 75496.0,
-      "2012": 65669.0,
-      "2011": 61368.0,
-      "2010": 57220.0
+      "Region": "Arab League",
+      "Top 5 Average GDP (1B USD)": 588.38
     },
     {
-      "Country": "Latvia",
-      "2030": 59013.0,
-      "2025": 45535.0,
-      "2024": 43508.0,
-      "2023": 42584.0,
-      "2022": 38045.0,
-      "2021": 38209.0,
-      "2020": 33353.0,
-      "2019": 33103.0,
-      "2018": 33263.0,
-      "2017": 29381.0,
-      "2016": 27110.0,
-      "2015": 26347.0,
-      "2014": 30285.0,
-      "2013": 29157.0,
-      "2012": 27136.0,
-      "2011": 26832.0,
-      "2010": 23509.0
+      "Region": "Asia-Pacific",
+      "Top 5 Average GDP (1B USD)": 5812.18
     },
     {
-      "Country": "Estonia",
-      "2030": 57366.0,
-      "2025": 45004.0,
-      "2024": 42752.0,
-      "2023": 41303.0,
-      "2022": 38406.0,
-      "2021": 37229.0,
-      "2020": 31795.0,
-      "2019": 31877.0,
-      "2018": 31237.0,
-      "2017": 27460.0,
-      "2016": 24554.0,
-      "2015": 23314.0,
-      "2014": 27063.0,
-      "2013": 25451.0,
-      "2012": 23252.0,
-      "2011": 23300.0,
-      "2010": 19569.0
+      "Region": "Commonwealth",
+      "Top 5 Average GDP (1B USD)": 2404.84
     },
     {
-      "Country": "Iceland",
-      "2030": 52753.0,
-      "2025": 35309.0,
-      "2024": 33463.0,
-      "2023": 31452.0,
-      "2022": 28696.0,
-      "2021": 25770.0,
-      "2020": 21630.0,
-      "2019": 24681.0,
-      "2018": 26261.0,
-      "2017": 24728.0,
-      "2016": 20793.0,
-      "2015": 17517.0,
-      "2014": 17868.0,
-      "2013": 16125.0,
-      "2012": 14752.0,
-      "2011": 15222.0,
-      "2010": 13751.0
+      "Region": "Europe",
+      "Top 5 Average GDP (1B USD)": 3366.63
     },
     {
-      "Country": "Cyprus",
-      "2030": 48528.0,
-      "2025": 38736.0,
-      "2024": 36156.0,
-      "2023": 33897.0,
-      "2022": 31001.0,
-      "2021": 30393.0,
-      "2020": 25535.0,
-      "2019": 26200.0,
-      "2018": 25766.0,
-      "2017": 22938.0,
-      "2016": 21041.0,
-      "2015": 19911.0,
-      "2014": 23232.0,
-      "2013": 23960.0,
-      "2012": 25063.0,
-      "2011": 27637.0,
-      "2010": 25821.0
+      "Region": "Latin America and Caribbean",
+      "Top 5 Average GDP (1B USD)": 1091.97
     },
     {
-      "Country": "Georgia",
-      "2030": 45246.0,
-      "2025": 35353.0,
-      "2024": 33775.0,
-      "2023": 30778.0,
-      "2022": 24985.0,
-      "2021": 18849.0,
-      "2020": 16013.0,
-      "2019": 17645.0,
-      "2018": 17905.0,
-      "2017": 16472.0,
-      "2016": 15445.0,
-      "2015": 15223.0,
-      "2014": 17966.0,
-      "2013": 17516.0,
-      "2012": 16894.0,
-      "2011": 15475.0,
-      "2010": 12425.0
+      "Region": "North America",
+      "Top 5 Average GDP (1B USD)": 6703.21
     },
     {
-      "Country": "Albania",
-      "2030": 37683.0,
-      "2025": 28372.0,
-      "2024": 27259.0,
-      "2023": 23388.0,
-      "2022": 19185.0,
-      "2021": 18086.0,
-      "2020": 15271.0,
-      "2019": 15582.0,
-      "2018": 15337.0,
-      "2017": 13209.0,
-      "2016": 12003.0,
-      "2015": 11525.0,
-      "2014": 13404.0,
-      "2013": 12936.0,
-      "2012": 12470.0,
-      "2011": 13052.0,
-      "2010": 12079.0
-    },
-    {
-      "Country": "Bosnia and Herzegovina",
-      "2030": 36788.0,
-      "2025": 28807.0,
-      "2024": 28795.0,
-      "2023": 27592.0,
-      "2022": 24535.0,
-      "2021": 23673.0,
-      "2020": 20226.0,
-      "2019": 20483.0,
-      "2018": 20484.0,
-      "2017": 18326.0,
-      "2016": 17117.0,
-      "2015": 16404.0,
-      "2014": 18559.0,
-      "2013": 18179.0,
-      "2012": 17227.0,
-      "2011": 18644.0,
-      "2010": 17176.0
-    },
-    {
-      "Country": "Malta",
-      "2030": 34791.0,
-      "2025": 25750.0,
-      "2024": 24315.0,
-      "2023": 22217.0,
-      "2022": 19254.0,
-      "2021": 19737.0,
-      "2020": 16397.0,
-      "2019": 16340.0,
-      "2018": 16161.0,
-      "2017": 14156.0,
-      "2016": 12022.0,
-      "2015": 11342.0,
-      "2014": 11891.0,
-      "2013": 10797.0,
-      "2012": 9616.0,
-      "2011": 9788.0,
-      "2010": 9104.0
-    },
-    {
-      "Country": "Armenia",
-      "2030": 33319.0,
-      "2025": 26258.0,
-      "2024": 25533.0,
-      "2023": 24086.0,
-      "2022": 19514.0,
-      "2021": 13879.0,
-      "2020": 12642.0,
-      "2019": 13619.0,
-      "2018": 12458.0,
-      "2017": 11527.0,
-      "2016": 10546.0,
-      "2015": 10553.0,
-      "2014": 11610.0,
-      "2013": 11121.0,
-      "2012": 10619.0,
-      "2011": 10142.0,
-      "2010": 9260.0
-    },
-    {
-      "Country": "Moldova",
-      "2030": 28736.0,
-      "2025": 19462.0,
-      "2024": 18126.0,
-      "2023": 16751.0,
-      "2022": 14493.0,
-      "2021": 13694.0,
-      "2020": 11530.0,
-      "2019": 11737.0,
-      "2018": 11252.0,
-      "2017": 9515.0,
-      "2016": 7981.0,
-      "2015": 7778.0,
-      "2014": 9402.0,
-      "2013": 9496.0,
-      "2012": 8708.0,
-      "2011": 8417.0,
-      "2010": 6977.0
-    },
-    {
-      "Country": "North Macedonia",
-      "2030": 23618.0,
-      "2025": 17885.0,
-      "2024": 16679.0,
-      "2023": 15772.0,
-      "2022": 13957.0,
-      "2021": 14008.0,
-      "2020": 12385.0,
-      "2019": 12609.0,
-      "2018": 12694.0,
-      "2017": 11336.0,
-      "2016": 10686.0,
-      "2015": 10067.0,
-      "2014": 11378.0,
-      "2013": 10824.0,
-      "2012": 9751.0,
-      "2011": 10499.0,
-      "2010": 9415.0
-    },
-    {
-      "Country": "Kosovo",
-      "2030": 15069.0,
-      "2025": 11274.0,
-      "2024": 11151.0,
-      "2023": 10470.0,
-      "2022": 9375.0,
-      "2021": 9418.0,
-      "2020": 7728.0,
-      "2019": 7900.0,
-      "2018": 7882.0,
-      "2017": 7178.0,
-      "2016": 6681.0,
-      "2015": 6296.0,
-      "2014": 7076.0,
-      "2013": 6735.0,
-      "2012": 6167.0,
-      "2011": 6340.0,
-      "2010": 5348.0
-    },
-    {
-      "Country": "Monaco[6]",
-      "2030": NaN,
-      "2025": NaN,
-      "2024": NaN,
-      "2023": 9995.0,
-      "2022": 8800.0,
-      "2021": 8623.0,
-      "2020": 6731.0,
-      "2019": 7384.0,
-      "2018": 7184.0,
-      "2017": 6430.0,
-      "2016": 6471.0,
-      "2015": 6265.0,
-      "2014": 7070.0,
-      "2013": 6556.0,
-      "2012": 5743.0,
-      "2011": 6089.0,
-      "2010": 5368.0
-    },
-    {
-      "Country": "Liechtenstein[7]",
-      "2030": NaN,
-      "2025": NaN,
-      "2024": NaN,
-      "2023": NaN,
-      "2022": 7362.0,
-      "2021": 7710.0,
-      "2020": 6406.0,
-      "2019": 6437.0,
-      "2018": 6693.0,
-      "2017": 6474.0,
-      "2016": 6237.0,
-      "2015": 6269.0,
-      "2014": 6658.0,
-      "2013": 6392.0,
-      "2012": 5456.0,
-      "2011": 5740.0,
-      "2010": 5082.0
-    },
-    {
-      "Country": "Montenegro",
-      "2030": 11177.0,
-      "2025": 8562.0,
-      "2024": 8023.0,
-      "2023": 7532.0,
-      "2022": 6243.0,
-      "2021": 5865.0,
-      "2020": 4777.0,
-      "2019": 5543.0,
-      "2018": 5509.0,
-      "2017": 4855.0,
-      "2016": 4376.0,
-      "2015": 4055.0,
-      "2014": 4595.0,
-      "2013": 4466.0,
-      "2012": 4090.0,
-      "2011": 4544.0,
-      "2010": 4146.0
-    },
-    {
-      "Country": "Andorra",
-      "2030": 4732.0,
-      "2025": 4035.0,
-      "2024": 4038.0,
-      "2023": 3786.0,
-      "2022": 3376.0,
-      "2021": 3325.0,
-      "2020": 2885.0,
-      "2019": 3155.0,
-      "2018": 3217.0,
-      "2017": 2993.0,
-      "2016": 2895.0,
-      "2015": 2789.0,
-      "2014": 3267.0,
-      "2013": 3193.0,
-      "2012": 3189.0,
-      "2011": 3625.0,
-      "2010": 3446.0
-    },
-    {
-      "Country": "San Marino",
-      "2030": 2406.0,
-      "2025": 2047.0,
-      "2024": 2063.0,
-      "2023": 2003.0,
-      "2022": 1833.0,
-      "2021": 1857.0,
-      "2020": 1543.0,
-      "2019": 1616.0,
-      "2018": 1656.0,
-      "2017": 1528.0,
-      "2016": 1468.0,
-      "2015": 1420.0,
-      "2014": 1674.0,
-      "2013": 1678.0,
-      "2012": 1606.0,
-      "2011": 1813.0,
-      "2010": 1883.0
-    },
-    {
-      "Country": NaN,
-      "2030": NaN,
-      "2025": NaN,
-      "2024": NaN,
-      "2023": NaN,
-      "2022": NaN,
-      "2021": NaN,
-      "2020": NaN,
-      "2019": NaN,
-      "2018": NaN,
-      "2017": NaN,
-      "2016": NaN,
-      "2015": NaN,
-      "2014": NaN,
-      "2013": NaN,
-      "2012": NaN,
-      "2011": NaN,
-      "2010": NaN
+      "Region": "Oceania",
+      "Top 5 Average GDP (1B USD)": 418.78
     }
   ]
 }
