@@ -26,27 +26,31 @@ class ETLLogger:
             log_file.write(f"{timestamp}, {message}\n")
 
 
-# 변환된 GDP 데이터를 SQLite 데이터베이스에 저장하는 클래스입니다.
-class ExtractSQLiteWriter:
+# GDP 데이터 저장소와 표준 DataFrame에서 함께 쓰는 스키마입니다.
+class GDPSchema:
     TABLE_NAME = "Countries_by_GDP"
-    REGION_COLUMN = "Region"
-    COUNTRY_COLUMN = "Country"
     GDP_COLUMN = "GDP_USD_billion"
+
+
+# 변환된 GDP 데이터를 SQLite 데이터베이스에 적재하는 클래스입니다.
+class SQLiteGDPLoader:
+    TABLE_NAME = GDPSchema.TABLE_NAME
+    GDP_COLUMN = GDPSchema.GDP_COLUMN
 
     # 데이터베이스 파일 경로와 초기화 여부를 설정합니다.
     def __init__(self, db_path=BASE_DIR / "World_Economies.db"):
         self.db_path = Path(db_path)
         self._initialized = False
 
-    # 기존 테이블을 삭제하고 새 테이블을 만들어 저장 공간을 초기화합니다.
+    # 기존 테이블을 삭제하고 새 테이블을 만들어 저장 공간을 초기화합니다. (현재 스냅샷만 필요므로 기존 데이터는 삭제)
     def reset(self):
         with sqlite3.connect(self.db_path) as connection:
             connection.execute(f"DROP TABLE IF EXISTS {self.TABLE_NAME}")
             connection.execute(
                 f"""
                 CREATE TABLE {self.TABLE_NAME} (
-                    {self.REGION_COLUMN} TEXT NOT NULL,
-                    {self.COUNTRY_COLUMN} TEXT NOT NULL,
+                    Region TEXT NOT NULL,
+                    Country TEXT NOT NULL,
                     {self.GDP_COLUMN} REAL
                 )
                 """
@@ -54,12 +58,12 @@ class ExtractSQLiteWriter:
 
         self._initialized = True
 
-    # DataFrame에서 필요한 컬럼만 골라 SQLite 테이블에 저장합니다.
-    def save(self, df):
+    # DataFrame에서 필요한 컬럼만 골라 SQLite 테이블에 적재합니다.
+    def load(self, df):
         if not self._initialized:
             self.reset()
 
-        db_data = df[[self.REGION_COLUMN, self.COUNTRY_COLUMN, self.GDP_COLUMN]]
+        db_data = df[["Region", "Country", self.GDP_COLUMN]]
         db_data = db_data.where(pd.notna(db_data), None)
         records = db_data.itertuples(index=False, name=None)
 
@@ -67,7 +71,7 @@ class ExtractSQLiteWriter:
             connection.executemany(
                 f"""
                 INSERT INTO {self.TABLE_NAME}
-                    ({self.REGION_COLUMN}, {self.COUNTRY_COLUMN}, {self.GDP_COLUMN})
+                    (Region, Country, {self.GDP_COLUMN})
                 VALUES (?, ?, ?)
                 """,
                 records,
@@ -127,7 +131,7 @@ class RegionalGDPTableCrawler:
 
 # 수집한 지역별 GDP 표를 표준 컬럼과 단위로 변환하는 클래스입니다.
 class RegionalGDPTransformer:
-    GDP_COLUMN = ExtractSQLiteWriter.GDP_COLUMN
+    GDP_COLUMN = GDPSchema.GDP_COLUMN
 
     EXCLUDED_COUNTRIES = {
         "world",
@@ -309,12 +313,10 @@ class RegionalGDPTransformer:
         return " ".join(text.split())
 
 
-# SQLite에 저장된 GDP 데이터를 조회하고 출력 형식으로 정리하는 클래스입니다.
-class RegionalGDPLoader:
-    TABLE_NAME = ExtractSQLiteWriter.TABLE_NAME
-    REGION_COLUMN = ExtractSQLiteWriter.REGION_COLUMN
-    COUNTRY_COLUMN = ExtractSQLiteWriter.COUNTRY_COLUMN
-    GDP_COLUMN = RegionalGDPTransformer.GDP_COLUMN
+# SQLite에 저장된 GDP 데이터를 조회하고 분석 결과를 반환하는 클래스입니다.
+class RegionalGDPAnalyzer:
+    TABLE_NAME = GDPSchema.TABLE_NAME
+    GDP_COLUMN = GDPSchema.GDP_COLUMN
 
     # 조회할 데이터베이스 경로와 출력 기준값을 설정합니다.
     def __init__(
@@ -327,27 +329,16 @@ class RegionalGDPLoader:
         self.minimum_gdp_billion = minimum_gdp_billion
         self.top_n = top_n
 
-    # GDP 기준 조회 결과와 지역별 상위 GDP 평균을 콘솔에 출력합니다.
-    def print_result(self):
-        countries_over_100b = self.get_countries_over_100b()
-        top5_average = self.get_top5_average_by_region()
-
-        print(f"\n{'=' * 20} GDP >= 100B USD {'=' * 20}")
-        print(self._to_string(countries_over_100b))
-
-        print(f"\n{'=' * 20} Region Top 5 Average {'=' * 20}")
-        print(self._to_string(top5_average))
-
     # GDP가 기준값 이상인 국가 목록을 높은 GDP 순서로 조회합니다.
     def get_countries_over_100b(self):
         query = f"""
             SELECT
-                {self.REGION_COLUMN},
-                {self.COUNTRY_COLUMN},
+                Region,
+                Country,
                 ROUND({self.GDP_COLUMN}, 2) AS {self.GDP_COLUMN}
             FROM {self.TABLE_NAME}
             WHERE {self.GDP_COLUMN} >= ?
-            ORDER BY {self.GDP_COLUMN} DESC, {self.COUNTRY_COLUMN}
+            ORDER BY {self.GDP_COLUMN} DESC, Country
         """
 
         return self._read_sql(query, [self.minimum_gdp_billion])
@@ -356,22 +347,22 @@ class RegionalGDPLoader:
     def get_top5_average_by_region(self):
         query = f"""
             SELECT
-                {self.REGION_COLUMN},
+                Region,
                 ROUND(AVG({self.GDP_COLUMN}), 2) AS "Top {self.top_n} Average GDP_USD_billion"
             FROM (
                 SELECT
-                    {self.REGION_COLUMN},
-                    {self.COUNTRY_COLUMN},
+                    Region,
+                    Country,
                     {self.GDP_COLUMN},
                     ROW_NUMBER() OVER (
-                        PARTITION BY {self.REGION_COLUMN}
+                        PARTITION BY Region
                         ORDER BY {self.GDP_COLUMN} DESC
                     ) AS gdp_rank
                 FROM {self.TABLE_NAME}
             )
             WHERE gdp_rank <= ?
-            GROUP BY {self.REGION_COLUMN}
-            ORDER BY {self.REGION_COLUMN}
+            GROUP BY Region
+            ORDER BY Region
         """
 
         return self._read_sql(query, [self.top_n])
@@ -380,6 +371,17 @@ class RegionalGDPLoader:
     def _read_sql(self, query, params):
         with sqlite3.connect(self.db_path) as connection:
             return pd.read_sql_query(query, connection, params=params)
+
+
+# 분석 결과를 콘솔에 출력하는 클래스입니다.
+class ConsoleReporter:
+    # GDP 기준 조회 결과와 지역별 상위 GDP 평균을 콘솔에 출력합니다.
+    def print_result(self, countries_over_100b, top5_average):
+        print(f"\n{'=' * 20} GDP >= 100B USD {'=' * 20}")
+        print(self._to_string(countries_over_100b))
+
+        print(f"\n{'=' * 20} Region Top 5 Average {'=' * 20}")
+        print(self._to_string(top5_average))
 
     # DataFrame 출력 시 소수점 형식을 고정해 콘솔 결과를 읽기 쉽게 만듭니다.
     def _to_string(self, df):
@@ -393,13 +395,14 @@ class RegionalGDPLoader:
 # 스크립트를 직접 실행할 때 전체 ETL 흐름을 순서대로 수행합니다.
 if __name__ == "__main__":
     logger = ETLLogger()
-    db_writer = ExtractSQLiteWriter()
     crawler = RegionalGDPTableCrawler()
     transformer = RegionalGDPTransformer()
-    loader = RegionalGDPLoader(db_writer.db_path)
+    db_loader = SQLiteGDPLoader()
+    analyzer = RegionalGDPAnalyzer(db_loader.db_path)
+    reporter = ConsoleReporter()
 
     logger.log("ETL process started")
-    db_writer.reset()
+    db_loader.reset()
 
     for region in crawler.region_urls:
         logger.log(f"Extract started for {region}")
@@ -411,10 +414,12 @@ if __name__ == "__main__":
         logger.log(f"Transform ended for {region}")
 
         logger.log(f"Load started for {region}")
-        db_writer.save(transformed_data)
+        db_loader.load(transformed_data)
         logger.log(f"Load ended for {region}")
 
     logger.log("Output started")
-    loader.print_result()
+    countries_over_100b = analyzer.get_countries_over_100b()
+    top5_average = analyzer.get_top5_average_by_region()
+    reporter.print_result(countries_over_100b, top5_average)
     logger.log("Output ended")
     logger.log("ETL process ended")

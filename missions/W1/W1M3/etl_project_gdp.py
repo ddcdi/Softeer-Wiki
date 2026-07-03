@@ -27,6 +27,7 @@ class ETLLogger:
 
 
 # 추출 단계에서 얻은 원본 GDP 표를 지역별 JSON 파일로 저장하는 클래스입니다.
+# 추출된 원본 표를 JSON으로 저장 이건 “raw data snapshot” 저장에 가깝고, ETL의 최종 Load 단계가 아닙니다.
 class ExtractJSONWriter:
     # JSON 출력 경로와 저장할 데이터 컨테이너를 초기화합니다.
     def __init__(self, output_path=BASE_DIR / "Countries_by_GDP.json"):
@@ -319,6 +320,7 @@ class RegionalGDPTransformer:
 
 
 # 변환된 지역별 GDP 데이터를 모아 최종 분석 결과를 출력하는 클래스입니다.
+# 변환된 데이터를 내부에 저장하고 출력을 담당합니다. 실제 ETL과정처럼 데이터 웨어하우스에 저장하는 기능은 없습니다.
 class RegionalGDPLoader:
     GDP_COLUMN = RegionalGDPTransformer.GDP_COLUMN
 
