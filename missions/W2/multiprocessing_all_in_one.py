@@ -34,4 +34,7 @@ if __name__ == "__main__":
         p.join()
 
     for i in range(10):
-        print(tasks_that_are_done.get())
+        try:
+            print(tasks_that_are_done.get_nowait())
+        except Empty:
+            break
