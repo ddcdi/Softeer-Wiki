@@ -1,0 +1,7 @@
+/outputs
+.python-version
+log.txt
+extract.py
+load.py
+transform.py
+/__pycache__

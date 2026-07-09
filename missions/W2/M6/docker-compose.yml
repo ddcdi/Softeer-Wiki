@@ -1,0 +1,12 @@
+services:
+  jupyter:
+    build: .
+    image: w2m6-env # 이미지명은 소문자만 가능
+    container_name: w2m6-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../../W1/mtcars.csv:/home/jovyan/work/mtcars.csv
+      - ../../W1/W1M1.ipynb:/home/jovyan/work/W1M1.ipynb
+      - ../M5/kakao_review_wordcloud.ipynb:/home/jovyan/work/kakao_review_wordcloud.ipynb
+    working_dir: /home/jovyan/work
