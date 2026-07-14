@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--
+        yarn.nodemanager.aux-services : NodeManager가 실행할 보조 서비스.
+        "mapreduce_shuffle"는 Map 단계 출력을 Reduce 단계로 넘길 때
+        필요한 셔플(shuffle) 기능을 제공. MapReduce Job을 돌리려면 필수.
+    -->
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+
+    <!--
+        yarn.resourcemanager.hostname : ResourceManager가 어느 호스트에서
+        동작하는지. worker의 NodeManager들이 이 이름으로 ResourceManager를
+        찾아가서 등록(register)하게 됨.
+
+        [주의] 이 값만 지정하면 웹 UI 주소도 ${이 값}:8088로 자동 추론되어
+        컨테이너 내부 인터페이스에만 바인딩되는 문제가 생길 수 있으므로
+        (이전에 실제로 겪었던 문제), 웹 UI 바인딩은 아래에서 0.0.0.0으로
+        별도 명시함.
+    -->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>master</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.webapp.address</name>
+        <value>0.0.0.0:8088</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.webapp.address</name>
+        <value>0.0.0.0:8042</value>
+    </property>
+
+    <!--
+        메모리 관련 설정: 컨테이너 환경은 리소스가 제한적이므로
+        기본값보다 낮춰서 단일 노드에서도 안정적으로 뜨도록 함.
+        (필요시 로컬 환경 메모리에 맞게 조정)
+    -->
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>2048</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>2048</value>
+    </property>
+</configuration>

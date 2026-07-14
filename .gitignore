@@ -1,3 +1,8 @@
 /.vscode
 ddcdi_accessKeys.csv
 ddcdi-w2m6.pem
+
+/docs
+
+/missions/W3/M1/config/*
+/missions/W3/M3/config/*

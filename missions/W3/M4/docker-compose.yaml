@@ -1,0 +1,85 @@
+services:
+  # -------------------------------------------------------
+  # 마스터 노드: NameNode, SecondaryNameNode, ResourceManager
+  # -------------------------------------------------------
+  master:
+    build: .                     
+    image: w3m4:latest            
+    container_name: m4-master
+    hostname: namenode              
+    environment:
+      - ROLE=master                
+    ports:
+      - "9870:9870"   
+      - "8088:8088"   
+      - "9000:9000"   
+    volumes:
+      - namenode-data:/root/hdfs/namenode   # 컨테이너가 삭제/재생성돼도 NameNode 메타데이터 보존
+
+    networks:
+      - hadoop-net
+
+  # -------------------------------------------------------
+  # 워커 노드 1: DataNode, NodeManager
+  # -------------------------------------------------------
+  worker1:
+    image: w3m4:latest            # 새로 빌드하지 않고 master가 빌드한 이미지를 그대로 사용
+    container_name: m4-worker1
+    hostname: worker1
+    environment:
+      - ROLE=worker
+    depends_on:
+      - master               
+    volumes:
+      - worker1-data:/root/hdfs/datanode   # worker1의 실제 데이터 블록 보존
+    networks:
+      - hadoop-net
+
+  # -------------------------------------------------------
+  # 워커 노드 2: DataNode, NodeManager
+  # -------------------------------------------------------
+  worker2:
+    image: w3m4:latest
+    container_name: m4-worker2
+    hostname: worker2
+    environment:
+      - ROLE=worker
+    depends_on:
+      - master
+    volumes:
+      - worker2-data:/root/hdfs/datanode   # worker2의 실제 데이터 블록 보존
+    networks:
+      - hadoop-net
+
+  # -------------------------------------------------------
+  # 워커 노드 3: DataNode, NodeManager
+  # -------------------------------------------------------
+
+  worker3:
+    image: w3m4:latest
+    container_name: m4-worker3
+    hostname: worker3
+    environment:
+      - ROLE=worker
+    depends_on:
+      - master
+    volumes:
+      - worker3-data:/root/hdfs/datanode
+    networks:
+      - hadoop-net
+
+# -------------------------------------------------------
+# 커스텀 브리지 네트워크
+# 이 네트워크에 묶인 컨테이너들은 서로 hostname(=service name)으로
+# DNS 해석이 가능해짐 (예: worker1 안에서 "ping master" 가능)
+# -------------------------------------------------------
+networks:
+  hadoop-net:
+    driver: bridge
+
+# Named Volume 선언  
+volumes:
+  namenode-data:
+  worker1-data:
+  worker2-data:
+  worker3-data:

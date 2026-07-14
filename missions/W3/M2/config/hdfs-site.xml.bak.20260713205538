@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--
+        dfs.replication : 데이터 블록을 몇 개 복제해서 저장할지.
+        워커가 2개(worker1, worker2)이므로 2로 설정하면
+        각 블록이 두 워커 모두에 복제되어 저장됨.
+        (worker가 3개 이상이어도 replication=2면 그중 2곳에만 복제됨 —
+         replication 개수는 "몇 대에 복제할지"이고 워커 총 개수와는 별개 개념)
+    -->
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+
+    <!--
+        dfs.namenode.name.dir : NameNode가 메타데이터(파일 트리, 블록 위치 정보)를
+        저장하는 로컬 경로. Dockerfile에서 미리 만들어둔 디렉토리와 일치해야 함.
+    -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///root/hdfs/namenode</value>
+    </property>
+
+    <!--
+        dfs.datanode.data.dir : DataNode가 실제 데이터 블록(파일 조각)을
+        저장하는 로컬 경로.
+    -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///root/hdfs/datanode</value>
+    </property>
+</configuration>

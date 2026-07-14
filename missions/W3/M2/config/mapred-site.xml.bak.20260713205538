@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--
+        mapreduce.framework.name : MapReduce 작업을 실행할 때 어떤 프레임워크를
+        쓸지 지정. "yarn"으로 설정하면 YARN이 자원(CPU/메모리)을 관리하며
+        MapReduce Job을 스케줄링함. (예전 Hadoop 1.x 시절엔 "classic" 방식도 있었음)
+    -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+
+    <!--
+        아래 두 설정은 MapReduce Job 실행 시 필요한 클래스패스를
+        YARN 컨테이너에 명시적으로 알려주기 위함.
+        이게 없으면 "ClassNotFoundException" 류의 에러가 날 수 있음.
+    -->
+    <property>
+        <name>mapreduce.application.classpath</name>
+        <value>$HADOOP_HOME/share/hadoop/mapreduce/*:$HADOOP_HOME/share/hadoop/mapreduce/lib/*</value>
+    </property>
+</configuration>
